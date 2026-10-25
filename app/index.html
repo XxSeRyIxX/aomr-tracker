@@ -1,0 +1,277 @@
+<!doctype html>
+<!-- AoM Retold Tracker, Copyright (C) 2026 XxSeRyIxX. SPDX-License-Identifier: AGPL-3.0-or-later. Additional terms: see NOTICE. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Only the app's own files, plus achievement icons from Steam's image server and the relay that reads public profiles. Everything else goes through the shell. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: https://cdn.fastly.steamstatic.com; connect-src 'self' https://*.workers.dev; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Every achievement and badge of Age of Mythology: Retold, and how far along you are on the ones you don't have yet.">
+  <meta name="author" content="XxSeRyIxX">
+  <meta name="theme-color" content="#0c1120">
+  <title>AoM Retold Tracker</title>
+  <link rel="icon" href="icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="app.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body class="booting">
+  <div id="loading" class="loading" role="status">
+    <img src="icon.png" width="64" height="64" alt="">
+    <span class="spinner" aria-hidden="true"></span>
+    <p data-i18n="loading.text"></p>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#achievements">
+      <img src="icon.png" width="28" height="28" alt="">
+      <span data-i18n="app.title">AoM Retold Tracker</span>
+    </a>
+    <nav class="tabs" role="tablist">
+      <a role="tab" id="tab-achievements" href="#achievements" aria-controls="view-achievements">
+        <span data-i18n="tab.achievements">Achievements</span><span class="tab-count" id="count-achievements"></span>
+      </a>
+      <a role="tab" id="tab-badges" href="#badges" aria-controls="view-badges">
+        <span data-i18n="tab.badges">Badges</span><span class="tab-count" id="count-badges"></span>
+      </a>
+    </nav>
+    <div class="bar-end">
+      <button id="player" class="player" type="button"><span class="dot" aria-hidden="true"></span><span id="player-name"></span></button>
+      <button id="refresh" class="icon-btn" type="button" data-only="desktop" data-i18n-label="action.refresh" data-i18n-title="action.refresh">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg>
+      </button>
+      <div class="segmented lang" role="group" data-i18n-label="lang.label">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <button class="icon-btn" type="button" data-about data-i18n-label="action.about" data-i18n-title="action.about">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div id="notice" class="notice" role="status" hidden>
+      <span id="notice-text"></span>
+      <button id="notice-load" class="btn small primary" type="button" data-i18n="player.load">Load your progress</button>
+      <button id="notice-manual" class="btn small" type="button" data-i18n="manual.start">Manual mode</button>
+    </div>
+
+    <section id="view-achievements" role="tabpanel" aria-labelledby="tab-achievements">
+      <div class="toolbar">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="ach-search" type="search" autocomplete="off" data-i18n-placeholder="search.achievements" data-i18n-label="search.label">
+        </label>
+        <div class="segmented" id="ach-state" role="group" data-i18n-label="state.label">
+          <button type="button" data-value="all" data-i18n="ach.all">All</button>
+          <button type="button" data-value="locked" data-i18n="ach.locked">Locked</button>
+          <button type="button" data-value="progress" data-i18n="ach.progress">In progress</button>
+          <button type="button" data-value="unlocked" data-i18n="ach.unlocked">Unlocked</button>
+        </div>
+        <select id="ach-category" data-i18n-label="category.label">
+          <option value="all" data-i18n="category.all">All categories</option>
+          <option value="story" data-i18n="category.story">Campaigns and battles</option>
+          <option value="gauntlet" data-i18n="category.gauntlet">Gauntlet</option>
+          <option value="arena" data-i18n="category.arena">Arena of the Gods</option>
+          <option value="matches" data-i18n="category.matches">Matches</option>
+        </select>
+        <select id="ach-sort" data-i18n-label="sort.label">
+          <option value="closest" data-i18n="sort.closest">Closest first</option>
+          <option value="recent" data-i18n="sort.recentAch">Recently unlocked</option>
+          <option value="rarity" data-i18n="sort.rarity">Rarest first</option>
+          <option value="name" data-i18n="sort.name">Name</option>
+          <option value="game" data-i18n="sort.game">Game order</option>
+        </select>
+        <label class="check" id="ach-secrets-wrap">
+          <input id="ach-secrets" type="checkbox">
+          <span data-i18n="secrets.show">Show hidden descriptions</span>
+        </label>
+      </div>
+
+      <section class="next" id="ach-next-wrap" hidden>
+        <h2 data-i18n="next.achievements">Closest to unlocking</h2>
+        <div class="grid" id="ach-next"></div>
+      </section>
+
+      <p class="count muted" id="ach-count"></p>
+      <div class="grid" id="ach-grid"></div>
+      <p class="empty muted" id="ach-empty" hidden></p>
+    </section>
+
+    <section id="view-badges" role="tabpanel" aria-labelledby="tab-badges" hidden>
+      <div class="toolbar">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="badge-search" type="search" autocomplete="off" data-i18n-placeholder="search.badges" data-i18n-label="search.label">
+        </label>
+        <div class="segmented" id="badge-state" role="group" data-i18n-label="state.label">
+          <button type="button" data-value="all" data-i18n="badge.all">All</button>
+          <button type="button" data-value="missing" data-i18n="badge.missing">Not earned</button>
+          <button type="button" data-value="progress" data-i18n="badge.progressFilter">In progress</button>
+          <button type="button" data-value="earned" data-i18n="badge.earnedFilter">Earned</button>
+        </div>
+        <select id="badge-sort" data-i18n-label="sort.label">
+          <option value="game" data-i18n="sort.game">Game order</option>
+          <option value="closest" data-i18n="sort.closest">Closest first</option>
+          <option value="recent" data-i18n="sort.recentBadge">Recently earned</option>
+          <option value="name" data-i18n="sort.name">Name</option>
+        </select>
+      </div>
+
+      <section class="next" id="badge-next-wrap" hidden>
+        <h2 data-i18n="next.badges">Closest to earning</h2>
+        <div class="grid" id="badge-next"></div>
+      </section>
+
+      <p class="count muted" id="badge-count"></p>
+      <div class="grid" id="badge-grid"></div>
+      <p class="empty muted" id="badge-empty" hidden></p>
+    </section>
+  </main>
+
+  <footer class="footer muted small" data-i18n="footer.sources">Achievements and badges: the game's files, Steam or your public profile · Texts and art: the game</footer>
+
+  <dialog id="detail" aria-labelledby="detail-name">
+    <form method="dialog">
+      <div class="detail-head">
+        <div id="detail-art" class="detail-art"></div>
+        <div>
+          <h2 id="detail-name"></h2>
+          <p id="detail-status" class="muted"></p>
+        </div>
+      </div>
+      <p id="detail-desc"></p>
+      <div id="detail-progress"></div>
+      <p id="detail-hint" class="muted small" hidden></p>
+      <div id="detail-list" class="chips"></div>
+      <dl id="detail-facts" class="facts"></dl>
+      <div class="dialog-actions">
+        <button id="detail-mark" class="btn" type="button" hidden></button>
+        <button class="btn primary" value="close" type="submit" data-i18n="dlg.close">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="progress" class="wide" aria-labelledby="progress-title">
+    <form method="dialog">
+      <h2 id="progress-title" data-i18n="progress.title">Your progress</h2>
+
+      <section class="source">
+        <h3 data-i18n="folder.title">Your game folder: PC, Steam Deck, Linux or Mac</h3>
+        <p class="muted small" data-only="web" data-i18n="folder.introWeb"></p>
+        <p class="muted small" data-only="desktop" data-i18n="folder.introDesktop"></p>
+        <div class="segmented os" id="os-tabs" role="group" data-i18n-label="folder.system">
+          <button type="button" data-value="windows">Windows</button>
+          <button type="button" data-value="linux">Linux / Steam Deck</button>
+          <button type="button" data-value="mac">macOS</button>
+        </div>
+        <div class="path-row">
+          <code id="folder-path"></code>
+          <button id="copy-folder" class="btn small ghost" type="button" data-i18n="folder.copy">Copy</button>
+        </div>
+        <p class="muted small" id="folder-hint"></p>
+        <div class="path-row" data-only="desktop">
+          <span id="folder-found" class="file-state"></span>
+          <button id="choose-folder" class="btn small" type="button" data-i18n="folder.choose">Choose folder…</button>
+        </div>
+        <label class="drop" id="drop" data-only="web">
+          <input id="folder-input" type="file" webkitdirectory>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg>
+          <span data-i18n="folder.drop">Drop the Age of Mythology Retold folder here, or click to choose it</span>
+        </label>
+        <ul class="file-list" id="file-list"></ul>
+        <p class="muted small" data-only="web"><a href="https://github.com/XxSeRyIxX/aomr-tracker/releases/latest" target="_blank" rel="noopener" data-i18n="folder.getApp"></a></p>
+      </section>
+
+      <details class="source">
+        <summary><h3 data-i18n="steam.title">Steam's files (optional)</h3></summary>
+        <p class="muted small" data-i18n="steam.intro"></p>
+        <div class="path-row">
+          <code id="steam-path"></code>
+          <button id="copy-steam" class="btn small ghost" type="button" data-i18n="folder.copy">Copy</button>
+        </div>
+        <p class="muted small" data-only="web" data-i18n="steam.how"></p>
+        <div class="path-row" data-only="web">
+          <input id="file-input" type="file" multiple hidden>
+          <button id="choose-files" class="btn small" type="button" data-i18n="steam.choose">Choose files…</button>
+        </div>
+        <ul class="file-list" id="steam-list"></ul>
+      </details>
+
+      <section class="source">
+        <h3 data-i18n="profile.title">Xbox, PlayStation or another PC: your public profile</h3>
+        <p class="muted small" data-only="web" data-profile="by-hand" data-i18n="profile.introWeb"></p>
+        <p class="muted small" data-only="web" data-profile="auto" data-i18n="profile.introRelay"></p>
+        <p class="muted small" data-only="desktop" data-i18n="profile.introDesktop"></p>
+        <ol class="steps">
+          <li>
+            <div class="step-row">
+              <input id="profile-name" type="text" autocomplete="off" spellcheck="false" data-i18n-placeholder="profile.name" data-i18n-label="profile.name">
+              <a id="link-find" class="btn small" target="_blank" rel="noopener" data-profile="by-hand" data-i18n="profile.find">Find me</a>
+              <button id="find-profile" class="btn small" type="button" data-profile="auto" data-i18n="profile.find">Find me</button>
+            </div>
+            <span id="state-find" class="step-state"></span>
+          </li>
+          <li data-profile="by-hand">
+            <div class="step-row"><span data-i18n="profile.badges">Your badges</span><a id="link-badges" class="btn small" target="_blank" rel="noopener" data-i18n="profile.open">Open</a></div>
+            <span id="state-badges" class="step-state"></span>
+          </li>
+          <li data-profile="by-hand">
+            <div class="step-row"><span data-i18n="profile.achievements">Your achievements</span><a id="link-achievements" class="btn small" target="_blank" rel="noopener" data-i18n="profile.open">Open</a></div>
+            <span id="state-achievements" class="step-state"></span>
+          </li>
+        </ol>
+        <div class="step-row" data-profile="by-hand">
+          <textarea id="paste" rows="2" data-i18n-placeholder="profile.paste" data-i18n-label="profile.paste"></textarea>
+          <button id="read-paste" class="btn small" type="button" data-i18n="profile.read">Read</button>
+        </div>
+      </section>
+
+      <section class="source">
+        <h3 data-i18n="copy.title">Move or keep a copy</h3>
+        <p class="muted small" data-only="web" data-i18n="copy.introWeb"></p>
+        <p class="muted small" data-only="desktop" data-i18n="copy.introDesktop"></p>
+        <div class="path-row">
+          <button id="copy-save" class="btn small" type="button" data-i18n="copy.save">Save a copy</button>
+          <button id="copy-load" class="btn small" type="button" data-i18n="copy.load">Load a copy…</button>
+          <input id="copy-file" type="file" accept=".json,application/json" hidden>
+        </div>
+      </section>
+
+      <div class="path-row">
+        <p class="muted small" data-i18n="progress.marks"></p>
+        <button id="progress-manual" class="btn small" type="button" data-i18n="manual.start">Manual mode</button>
+      </div>
+      <div class="dialog-actions">
+        <button id="forget" class="btn ghost" type="button"></button>
+        <button class="btn primary" value="close" type="submit" data-i18n="dlg.close">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="about" aria-labelledby="about-title">
+    <form method="dialog">
+      <div class="about-head">
+        <img src="icon.png" width="48" height="48" alt="">
+        <h2 id="about-title" data-i18n="about.title">About AoM Retold Tracker</h2>
+      </div>
+      <p data-i18n="about.what"></p>
+      <p><span data-i18n="about.made">Made by</span> <a href="https://github.com/XxSeRyIxX" target="_blank" rel="noopener">XxSeRyIxX</a> ·
+        <a href="https://github.com/XxSeRyIxX/aomr-tracker" target="_blank" rel="noopener" data-i18n="about.source">Source code</a>
+        <span data-only="web">· <a href="https://github.com/XxSeRyIxX/aomr-tracker/releases/latest" target="_blank" rel="noopener" data-i18n="about.getApp">Desktop app</a></span></p>
+      <p class="muted small" data-i18n="about.license"></p>
+      <p class="muted small" data-i18n="about.disclaimer"></p>
+      <p class="muted small" data-only="desktop" data-i18n="about.dataDesktop"></p>
+      <p class="muted small" data-only="web" data-profile="by-hand" data-i18n="about.dataWeb"></p>
+      <p class="muted small" data-only="web" data-profile="auto" data-i18n="about.dataRelay"></p>
+      <p class="muted small" id="about-game-data"></p>
+      <div class="dialog-actions">
+        <button class="btn primary" value="close" type="submit" data-i18n="dlg.close">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" popover="manual"></div>
+</body>
+</html>

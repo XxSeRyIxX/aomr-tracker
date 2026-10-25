@@ -1,0 +1,2996 @@
+{
+ "fetched": "2026-10-25",
+ "items": [
+  {
+   "id": 10000,
+   "name": "BadgeTheSwift",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 1, \"Asset\": \"resources/badge/the_swift.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_01\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_01\" }"
+  },
+  {
+   "id": 10001,
+   "name": "TitleTheSwift",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 1, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_01\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_01\" }"
+  },
+  {
+   "id": 10002,
+   "name": "BadgeThePunctual",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 0, \"GroupID\": 1, \"Asset\": \"resources/badge/the_punctual.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_132\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_132\" }"
+  },
+  {
+   "id": 10003,
+   "name": "TitleThePunctual",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 0, \"GroupID\": 1, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_132\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_132\" }"
+  },
+  {
+   "id": 10004,
+   "name": "BadgeSpeedrunner",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 1, \"Asset\": \"resources/badge/speedrunner.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_02\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_02\" }"
+  },
+  {
+   "id": 10005,
+   "name": "TitleSpeedrunner",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 1, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_02\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_02\" }"
+  },
+  {
+   "id": 10006,
+   "name": "BadgeChronomancer",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 1, \"Asset\": \"resources/badge/chronomancer.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_131\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_131\" }"
+  },
+  {
+   "id": 10007,
+   "name": "TitleChronomancer",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 1, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_131\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_131\" }"
+  },
+  {
+   "id": 10008,
+   "name": "BadgeTheTimeless",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 1, \"Asset\": \"resources/badge/the_timeless.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_133\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_133\" }"
+  },
+  {
+   "id": 10009,
+   "name": "TitleTheTimeless",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 1, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_133\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_133\" }"
+  },
+  {
+   "id": 10010,
+   "name": "BadgeChildOfHermes",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 2, \"Asset\": \"resources/badge/child_of_hermes.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_04\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_04\" }"
+  },
+  {
+   "id": 10011,
+   "name": "TitleChildOfHermes",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 2, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_04\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_04\" }"
+  },
+  {
+   "id": 10012,
+   "name": "BadgeWarriorOfHorus",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 3, \"Asset\": \"resources/badge/warrior_of_horus.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_05\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_05\" }"
+  },
+  {
+   "id": 10013,
+   "name": "TitleWarriorOfHorus",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 3, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_05\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_05\" }"
+  },
+  {
+   "id": 10014,
+   "name": "BadgeHermodsFury",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 4, \"Asset\": \"resources/badge/hermods_fury.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_06\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_06\" }"
+  },
+  {
+   "id": 10015,
+   "name": "TitleHermodsFury",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 4, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_06\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_06\" }"
+  },
+  {
+   "id": 10016,
+   "name": "BadgeZephyrusWing",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 5, \"Asset\": \"resources/badge/zephyrus_wing.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_07\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_07\" }"
+  },
+  {
+   "id": 10017,
+   "name": "TitleZephyrusWing",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 5, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_07\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_07\" }"
+  },
+  {
+   "id": 10018,
+   "name": "BadgeTheTempest",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 6, \"Asset\": \"resources/badge/the_tempest.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_08\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_08\" }"
+  },
+  {
+   "id": 10019,
+   "name": "TitleTheTempest",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 6, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_08\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_08\" }"
+  },
+  {
+   "id": 10020,
+   "name": "BadgeFujinsGale",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 7, \"Asset\": \"resources/badge/fujins_gale.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_09\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_09\" }"
+  },
+  {
+   "id": 10021,
+   "name": "TitleFujinsGale",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 7, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_09\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_09\" }"
+  },
+  {
+   "id": 10022,
+   "name": "BadgeTheLucky",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 0, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"Asset\": \"resources/badge/the_lucky.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_134\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_134\" }"
+  },
+  {
+   "id": 10023,
+   "name": "TitleTheLucky",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 0, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_134\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_134\" }"
+  },
+  {
+   "id": 10024,
+   "name": "BadgeTheUnscathed",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"Asset\": \"resources/badge/the_unscathed.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_78\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_78\" }"
+  },
+  {
+   "id": 10025,
+   "name": "TitleTheUnscathed",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_78\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_78\" }"
+  },
+  {
+   "id": 10026,
+   "name": "BadgeFlawlessExecutioner",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"Asset\": \"resources/badge/flawless_executioner.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_10\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_10\" }"
+  },
+  {
+   "id": 10027,
+   "name": "TitleFlawlessExecutioner",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_10\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_10\" }"
+  },
+  {
+   "id": 10028,
+   "name": "BadgeDemigod",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"Asset\": \"resources/badge/demigod.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_11\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_11\" }"
+  },
+  {
+   "id": 10029,
+   "name": "TitleDemigod",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_11\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_11\" }"
+  },
+  {
+   "id": 10030,
+   "name": "BadgeGod",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"Asset\": \"resources/badge/god.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_12\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_12\" }"
+  },
+  {
+   "id": 10031,
+   "name": "TitleGod",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 8, \"Flags\": \"NoCoop\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_12\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_12\" }"
+  },
+  {
+   "id": 10032,
+   "name": "BadgeMinotaurOverlord",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 9, \"Asset\": \"resources/badge/minotaur_overlord.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_15\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_15\" }"
+  },
+  {
+   "id": 10033,
+   "name": "TitleMinotaurOverlord",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 9, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_15\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_15\" }"
+  },
+  {
+   "id": 10034,
+   "name": "BadgeBossTamer",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 9, \"Asset\": \"resources/badge/boss_tamer.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_14\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_14\" }"
+  },
+  {
+   "id": 10035,
+   "name": "TitleBossTamer",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 9, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_14\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_14\" }"
+  },
+  {
+   "id": 10036,
+   "name": "BadgeLordOfTheLabyrinth",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 9, \"Asset\": \"resources/badge/lord_of_the_labyrinth.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_22\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_22\" }"
+  },
+  {
+   "id": 10037,
+   "name": "TitleLordOfTheLabyrinth",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 9, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_22\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_22\" }"
+  },
+  {
+   "id": 10038,
+   "name": "BadgeProgenitor",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 9, \"Asset\": \"resources/badge/progenitor.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_116\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_116\" }"
+  },
+  {
+   "id": 10039,
+   "name": "TitleProgenitor",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 9, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_116\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_116\" }"
+  },
+  {
+   "id": 10040,
+   "name": "BadgeChildOfTheseus",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 10, \"Asset\": \"resources/badge/child_of_theseus.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_16\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_16\" }"
+  },
+  {
+   "id": 10041,
+   "name": "TitleChildOfTheseus",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 10, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_16\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_16\" }"
+  },
+  {
+   "id": 10042,
+   "name": "BadgeGatekeeper",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 11, \"Asset\": \"resources/badge/gatekeeper.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_17\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_17\" }"
+  },
+  {
+   "id": 10043,
+   "name": "TitleGatekeeper",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 11, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_17\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_17\" }"
+  },
+  {
+   "id": 10044,
+   "name": "BadgeMarauder",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 12, \"Asset\": \"resources/badge/marauder.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_18\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_18\" }"
+  },
+  {
+   "id": 10045,
+   "name": "TitleMarauder",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 12, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_18\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_18\" }"
+  },
+  {
+   "id": 10046,
+   "name": "BadgeHandOfAtlas",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 13, \"Asset\": \"resources/badge/hand_of_atlas.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_19\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_19\" }"
+  },
+  {
+   "id": 10047,
+   "name": "TitleHandOfAtlas",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 13, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_19\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_19\" }"
+  },
+  {
+   "id": 10048,
+   "name": "BadgeEmperor",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 14, \"Asset\": \"resources/badge/emperor.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_20\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_20\" }"
+  },
+  {
+   "id": 10049,
+   "name": "TitleEmperor",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 14, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_20\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_20\" }"
+  },
+  {
+   "id": 10050,
+   "name": "BadgeDaimyo",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 15, \"Asset\": \"resources/badge/daimyo.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_21\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_21\" }"
+  },
+  {
+   "id": 10051,
+   "name": "TitleDaimyo",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 15, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_21\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_21\" }"
+  },
+  {
+   "id": 10052,
+   "name": "BadgeIronFist",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 16, \"Asset\": \"resources/badge/iron_fist.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_13\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_13\" }"
+  },
+  {
+   "id": 10053,
+   "name": "TitleIronFist",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 16, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_13\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_13\" }"
+  },
+  {
+   "id": 10054,
+   "name": "BadgeTyrant",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 16, \"Asset\": \"resources/badge/tyrant.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_25\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_25\" }"
+  },
+  {
+   "id": 10055,
+   "name": "TitleTyrant",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 2, \"GroupID\": 16, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_25\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_25\" }"
+  },
+  {
+   "id": 10056,
+   "name": "BadgePrimordialBeing",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 16, \"Asset\": \"resources/badge/primordial_being.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_23\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_23\" }"
+  },
+  {
+   "id": 10057,
+   "name": "TitlePrimordialBeing",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 16, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_23\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_23\" }"
+  },
+  {
+   "id": 10058,
+   "name": "BadgeSupremeDeity",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 16, \"Asset\": \"resources/badge/supreme_deity.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_24\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_24\" }"
+  },
+  {
+   "id": 10059,
+   "name": "TitleSupremeDeity",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 4, \"GroupID\": 16, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_24\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_24\" }"
+  },
+  {
+   "id": 10060,
+   "name": "BadgeSpartan",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 17, \"Asset\": \"resources/badge/spartan.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_135\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_135\" }"
+  },
+  {
+   "id": 10061,
+   "name": "TitleSpartan",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 17, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_135\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_135\" }"
+  },
+  {
+   "id": 10062,
+   "name": "BadgeRasChosen",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 18, \"Asset\": \"resources/badge/ras_chosen.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_26\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_26\" }"
+  },
+  {
+   "id": 10063,
+   "name": "TitleRasChosen",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 18, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_26\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_26\" }"
+  },
+  {
+   "id": 10064,
+   "name": "BadgeBloodAxe",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 19, \"Asset\": \"resources/badge/blood_axe.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_27\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_27\" }"
+  },
+  {
+   "id": 10065,
+   "name": "TitleBloodAxe",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 19, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_27\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_27\" }"
+  },
+  {
+   "id": 10066,
+   "name": "BadgeChampionOfAtlantis",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 20, \"Asset\": \"resources/badge/champion_of_atlantis.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_28\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_28\" }"
+  },
+  {
+   "id": 10067,
+   "name": "TitleChampionOfAtlantis",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 20, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_28\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_28\" }"
+  },
+  {
+   "id": 10068,
+   "name": "BadgeJadeEmperor",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 21, \"Asset\": \"resources/badge/jade_emperor.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_29\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_29\" }"
+  },
+  {
+   "id": 10069,
+   "name": "TitleJadeEmperor",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 21, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_29\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_29\" }"
+  },
+  {
+   "id": 10070,
+   "name": "BadgeGreaterVirtue",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 22, \"Asset\": \"resources/badge/greater_virtue.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_30\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_30\" }"
+  },
+  {
+   "id": 10071,
+   "name": "TitleGreaterVirtue",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 3, \"GroupID\": 22, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_30\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_30\" }"
+  },
+  {
+   "id": 10072,
+   "name": "BadgeConquerorOfOlympus",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 23, \"Asset\": \"resources/badge/conqueror_of_olympus.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_59\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_59\" }"
+  },
+  {
+   "id": 10073,
+   "name": "TitleConquerorOfOlympus",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 23, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_59\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_59\" }"
+  },
+  {
+   "id": 10074,
+   "name": "BadgeRulerOfTheNile",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 24, \"Asset\": \"resources/badge/ruler_of_the_nile.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_121\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_121\" }"
+  },
+  {
+   "id": 10075,
+   "name": "TitleRulerOfTheNile",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 24, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_121\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_121\" }"
+  },
+  {
+   "id": 10076,
+   "name": "BadgeChampionOfValhalla",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 25, \"Asset\": \"resources/badge/champion_of_valhalla.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_65\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_65\" }"
+  },
+  {
+   "id": 10077,
+   "name": "TitleChampionOfValhalla",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 25, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_65\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_65\" }"
+  },
+  {
+   "id": 10078,
+   "name": "BadgeUtopian",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 26, \"Asset\": \"resources/badge/utopian.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_122\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_122\" }"
+  },
+  {
+   "id": 10079,
+   "name": "TitleUtopian",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 26, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_122\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_122\" }"
+  },
+  {
+   "id": 10080,
+   "name": "BadgePrimordialThunder",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 27, \"Asset\": \"resources/badge/primordial_thunder.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_129\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_129\" }"
+  },
+  {
+   "id": 10081,
+   "name": "TitlePrimordialThunder",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 27, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_129\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_129\" }"
+  },
+  {
+   "id": 10082,
+   "name": "BadgeChildOfIzanami",
+   "categories": [
+    1003
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 28, \"Asset\": \"resources/badge/child_of_izanami.png\", \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_136\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_136\" }"
+  },
+  {
+   "id": 10083,
+   "name": "TitleChildOfIzanami",
+   "categories": [
+    1004
+   ],
+   "meta": "{ \"Tier\": 1, \"GroupID\": 28, \"NameStrID\": \"STR_BDGTTL_TITLE_NAME_136\", \"DescStrID\": \"STR_BDGTTL_TITLE_NAME_136\" }"
+  }
+ ],
+ "groups": [
+  [
+   3,
+   "CommunityMonthly_Challenge",
+   "Group to house all community monthly rewards",
+   2,
+   null,
+   null,
+   ""
+  ],
+  [
+   1000,
+   "Persistent_TheSwift",
+   "Persistent Challenge Badge and Title The Swift",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_TheSwift\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_01\", \"params\": [\"12\"]} }"
+  ],
+  [
+   1001,
+   "Persistent_ThePunctual",
+   "Persistent Challenge Badge and Title The Punctual",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ThePunctual\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_01\", \"params\": [\"16\"]} }"
+  ],
+  [
+   1002,
+   "Persistent_Speedrunner",
+   "Persistent Challenge Badge and Title Speedrunner",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Speedrunner\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_01\", \"params\": [\"8\"]} }"
+  ],
+  [
+   1003,
+   "Persistent_Chronomancer",
+   "Persistent Challenge Badge and Title Chronomancer",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Chronomancer\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_124\", \"params\": [\"6\",\"STR_SW_HARD\"]} }"
+  ],
+  [
+   1004,
+   "Persistent_TheTimeless",
+   "Persistent Challenge Badge and Title The Timeless",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_TheTimeless\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_131\", \"params\": [\"10\",\"STR_SW_EXTREME\"]} }"
+  ],
+  [
+   1005,
+   "Persistent_ChildOfHermes",
+   "Persistent Challenge Badge and Title Child Of Hermes",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ChildOfHermes\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_03\", \"params\": [\"8\",\"STR_CULTURE_GREEKS\"]} }"
+  ],
+  [
+   1006,
+   "Persistent_WarriorOfHorus",
+   "Persistent Challenge Badge and Title Warrior Of Horus",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_WarriorOfHorus\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_03\", \"params\": [\"8\",\"STR_CULTURE_EGYPTIANS\"]} }"
+  ],
+  [
+   1007,
+   "Persistent_HermodsFury",
+   "Persistent Challenge Badge and Title Hermods Fury",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_HermodsFury\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_03\", \"params\": [\"8\",\"STR_CULTURE_NORSE\"]} }"
+  ],
+  [
+   1008,
+   "Persistent_ZephyrusWing",
+   "Persistent Challenge Badge and Title Zephyrus Wing",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ZephyrusWing\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_03\", \"params\": [\"8\",\"STR_CULTURE_ATLANTEANS\"]} }"
+  ],
+  [
+   1009,
+   "Persistent_TheTempest",
+   "Persistent Challenge Badge and Title The Tempest",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_TheTempest\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_03\", \"params\": [\"8\",\"STR_CULTURE_CHINESE\"]} }"
+  ],
+  [
+   1010,
+   "Persistent_FujinsGale",
+   "Persistent Challenge Badge and Title FujinsGale",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_FujinsGale\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_03\", \"params\": [\"8\",\"STR_CULTURE_JAPANESE\"]} }"
+  ],
+  [
+   1011,
+   "Persistent_TheLucky",
+   "Persistent Challenge Badge and Title The Lucky",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_TheLucky\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_05\", \"params\": [\"5\"]} }"
+  ],
+  [
+   1012,
+   "Persistent_TheUnscathed",
+   "Persistent Challenge Badge and Title The Unscathed",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_TheUnscathed\", \"requirement_description\": \"STR_BDGTTL_OBJECTIVE_61\" }"
+  ],
+  [
+   1013,
+   "Persistent_FlawlessExecutioner",
+   "Persistent Challenge Badge and Title Flawless Executioner",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_FlawlessExecutioner\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_05\", \"params\": [\"25\"]} }"
+  ],
+  [
+   1014,
+   "Persistent_Demigod",
+   "Persistent Challenge Badge and Title Demigod",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Demigod\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_10\", \"params\": [\"5\",\"STR_SW_HARD\"]} }"
+  ],
+  [
+   1015,
+   "Persistent_God",
+   "Persistent Challenge Badge and Title God",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_God\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_10\", \"params\": [\"10\",\"STR_SW_EXTREME\"]} }"
+  ],
+  [
+   1016,
+   "Persistent_MinotaurOverlord",
+   "Persistent Challenge Badge and Title Minotaur Overlord",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_MinotaurOverlord\", \"requirement_description\": \"STR_BDGTTL_OBJECTIVE_11\" }"
+  ],
+  [
+   1017,
+   "Persistent_BossTamer",
+   "Persistent Challenge Badge and Title Boss Tamer",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_BossTamer\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_13\", \"params\": [\"STR_SW_HARD\"]} }"
+  ],
+  [
+   1018,
+   "Persistent_LordOfTheLabyrinth",
+   "Persistent Challenge Badge and Title Lord Of The Labyrinth",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_LordOfTheLabyrinth\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_13\", \"params\": [\"STR_SW_EXTREME\"]} }"
+  ],
+  [
+   1019,
+   "Persistent_Progenitor",
+   "Persistent Challenge Badge and Title Progenitor",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Progenitor\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_127\", \"params\": [\"STR_SW_LEGENDARY\"]} }"
+  ],
+  [
+   1020,
+   "Persistent_ChildOfTheseus",
+   "Persistent Challenge Badge and Title Child Of Theseus",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ChildOfTheseus\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_14\", \"params\": [\"STR_CULTURE_GREEKS\"]} }"
+  ],
+  [
+   1021,
+   "Persistent_Gatekeeper",
+   "Persistent Challenge Badge and Title Gatekeeper",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Gatekeeper\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_14\", \"params\": [\"STR_CULTURE_EGYPTIANS\"]} }"
+  ],
+  [
+   1022,
+   "Persistent_Marauder",
+   "Persistent Challenge Badge and Title Marauder",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Marauder\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_14\", \"params\": [\"STR_CULTURE_NORSE\"]} }"
+  ],
+  [
+   1023,
+   "Persistent_HandOfAtlas",
+   "Persistent Challenge Badge and Title Hand Of Atlas",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_HandOfAtlas\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_14\", \"params\": [\"STR_CULTURE_ATLANTEANS\"]} }"
+  ],
+  [
+   1024,
+   "Persistent_Emperor",
+   "Persistent Challenge Badge and Title Emperor",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Emperor\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_14\", \"params\": [\"STR_CULTURE_CHINESE\"]} }"
+  ],
+  [
+   1025,
+   "Persistent_Daimyo",
+   "Persistent Challenge Badge and Title Daimyo",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Daimyo\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_14\", \"params\": [\"STR_CULTURE_JAPANESE\"]} }"
+  ],
+  [
+   1026,
+   "Persistent_IronFist",
+   "Persistent Challenge Badge and Title Iron Fist",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_IronFist\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_20\", \"params\": [\"STR_SW_EASY\"]} }"
+  ],
+  [
+   1027,
+   "Persistent_Tyrant",
+   "Persistent Challenge Badge and Title Tyrant",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Tyrant\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_20\", \"params\": [\"STR_SW_HARD\"]} }"
+  ],
+  [
+   1028,
+   "Persistent_PrimordialBeing",
+   "Persistent Challenge Badge and Title Primordial Being",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_PrimordialBeing\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_19\", \"params\": [\"STR_SW_LEGENDARY\"]} }"
+  ],
+  [
+   1029,
+   "Persistent_SupremeDeity",
+   "Persistent Challenge Badge and Title Supreme Deity",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_SupremeDeity\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_128\", \"params\": [\"STR_SW_LEGENDARY\"]} }"
+  ],
+  [
+   1030,
+   "Persistent_Spartan",
+   "Persistent Challenge Badge and Title Spartan",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Spartan\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_25\", \"params\": [\"STR_SW_HARD\", \"STR_CULTURE_GREEKS\", \"STR_AOTG_BLESSINGS_NAME_HEROIC\"]} }"
+  ],
+  [
+   1031,
+   "Persistent_RasChosen",
+   "Persistent Challenge Badge and Title Ras Chosen",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_RasChosen\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_25\", \"params\": [\"STR_SW_HARD\", \"STR_CULTURE_EGYPTIANS\", \"STR_AOTG_BLESSINGS_NAME_HEROIC\"]} }"
+  ],
+  [
+   1032,
+   "Persistent_BloodAxe",
+   "Persistent Challenge Badge and Title Blood Axe",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_BloodAxe\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_25\", \"params\": [\"STR_SW_HARD\", \"STR_CULTURE_NORSE\", \"STR_AOTG_BLESSINGS_NAME_HEROIC\"]} }"
+  ],
+  [
+   1033,
+   "Persistent_ChampionOfAtlantis",
+   "Persistent Challenge Badge and Title Champion Of Atlantis",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ChampionOfAtlantis\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_25\", \"params\": [\"STR_SW_HARD\", \"STR_CULTURE_ATLANTEANS\", \"STR_AOTG_BLESSINGS_NAME_HEROIC\"]} }"
+  ],
+  [
+   1034,
+   "Persistent_JadeEmperor",
+   "Persistent Challenge Badge and Title Jade Emperor",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_JadeEmperor\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_25\", \"params\": [\"STR_SW_HARD\", \"STR_CULTURE_CHINESE\", \"STR_AOTG_BLESSINGS_NAME_HEROIC\"]} }"
+  ],
+  [
+   1035,
+   "Persistent_GreaterVirtue",
+   "Persistent Challenge Badge and Title Greater Virtue",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_GreaterVirtue\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_25\", \"params\": [\"STR_SW_HARD\", \"STR_CULTURE_JAPANESE\", \"STR_AOTG_BLESSINGS_NAME_HEROIC\"]} }"
+  ],
+  [
+   1036,
+   "Persistent_ConquerorOfOlympus",
+   "Persistent Challenge Badge and Title Conqueror Of Olympus",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ConquerorOfOlympus\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_132\", \"params\": [\"STR_INGAME_HELP_HISTORY_TITLE_GREEK\"]} }"
+  ],
+  [
+   1037,
+   "Persistent_RulerOfTheNile",
+   "Persistent Challenge Badge and Title Ruler Of The Nile",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_RulerOfTheNile\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_95\", \"params\": [\"STR_INGAME_HELP_HISTORY_TITLE_EGYPTIAN\"]} }"
+  ],
+  [
+   1038,
+   "Persistent_ChampionOfValhalla",
+   "Persistent Challenge Badge and Title Champion Of Valhalla",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ChampionOfValhalla\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_132\", \"params\": [\"STR_CULTURE_NORSE\"]} }"
+  ],
+  [
+   1039,
+   "Persistent_Utopian",
+   "Persistent Challenge Badge and Title Utopian",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_Utopian\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_95\", \"params\": [\"STR_INGAME_HELP_HISTORY_TITLE_ATLANTEAN\"]} }"
+  ],
+  [
+   1040,
+   "Persistent_PrimordialThunder",
+   "Persistent Challenge Badge and Title Primordial Thunder",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_PrimordialThunder\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_95\", \"params\": [\"STR_CULTURE_CHINESE\"]} }"
+  ],
+  [
+   1041,
+   "Persistent_ChildOfIzanami",
+   "Persistent Challenge Badge and Title Child Of Izanami",
+   2,
+   null,
+   null,
+   "{ \"type\": \"persistent\", \"tracker\": \"BadgeChallenge_ChildOfIzanami\", \"requirement_description\": {\"id\": \"STR_BDGTTL_OBJECTIVE_95\", \"params\": [\"STR_CULTURE_JAPANESE\"]} }"
+  ]
+ ],
+ "challenges": [
+  [
+   4,
+   "CommunityMonthlyChallenge01",
+   "bundle01",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   5,
+   "CommunityMonthlyChallenge02",
+   "bundle02",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   6,
+   "CommunityMonthlyChallenge03",
+   "bundle03",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   7,
+   "CommunityMonthlyChallenge04",
+   "bundle04",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   8,
+   "CommunityMonthlyChallenge05",
+   "bundle05",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   9,
+   "CommunityMonthlyChallenge06",
+   "bundle06",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10,
+   "CommunityMonthlyChallenge07",
+   "bundle07",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   11,
+   "CommunityMonthlyChallenge08",
+   "bundle08",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   12,
+   "CommunityMonthlyChallenge09",
+   "bundle09",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   13,
+   "CommunityMonthlyChallenge10",
+   "bundle10",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   14,
+   "CommunityMonthlyChallenge11",
+   "bundle11",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   15,
+   "CommunityMonthlyChallenge12",
+   "bundle12",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   16,
+   "CommunityMonthlyChallenge13",
+   "bundle13",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   17,
+   "CommunityMonthlyChallenge14",
+   "bundle14",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   18,
+   "CommunityMonthlyChallenge15",
+   "bundle15",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   19,
+   "CommunityMonthlyChallenge16",
+   "bundle16",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   20,
+   "CommunityMonthlyChallenge17",
+   "bundle18",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   21,
+   "CommunityMonthlyChallenge18",
+   "bundle19",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   22,
+   "CommunityMonthlyChallenge19",
+   "bundle20",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   23,
+   "CommunityMonthlyChallenge20",
+   "bundle21",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   24,
+   "CommunityMonthlyChallenge21",
+   "bundle22",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   25,
+   "CommunityMonthlyChallenge22",
+   "bundle23",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   26,
+   "CommunityMonthlyChallenge23",
+   "bundle24",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   27,
+   "CommunityMonthlyChallenge24",
+   "bundle25",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   28,
+   "CommunityMonthlyChallenge25",
+   "bundle26",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   29,
+   "CommunityMonthlyChallenge26",
+   "bundle27",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   30,
+   "CommunityMonthlyChallenge27",
+   "bundle28",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   31,
+   "CommunityMonthlyChallenge28",
+   "bundle29",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   32,
+   "CommunityMonthlyChallenge29",
+   "bundle30",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   33,
+   "CommunityMonthlyChallenge30",
+   "bundle31",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   34,
+   "CommunityMonthlyChallenge31",
+   "bundle32",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   35,
+   "CommunityMonthlyChallenge32",
+   "bundle33",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   36,
+   "CommunityMonthlyChallenge33",
+   "bundle34",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   37,
+   "CommunityMonthlyChallenge34",
+   "bundle35",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   38,
+   "CommunityMonthlyChallenge35",
+   "bundle36",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   39,
+   "CommunityMonthlyChallenge36",
+   "bundle37",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   40,
+   "CommunityMonthlyChallenge37",
+   "bundle38",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   41,
+   "CommunityMonthlyChallenge38",
+   "bundle39",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   42,
+   "CommunityMonthlyChallenge39",
+   "bundle40",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   43,
+   "CommunityMonthlyChallenge40",
+   "bundle41",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   44,
+   "CommunityMonthlyChallenge41",
+   "bundle42",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   45,
+   "CommunityMonthlyChallenge42",
+   "bundle43",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   46,
+   "CommunityMonthlyChallenge43",
+   "bundle44",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   47,
+   "CommunityMonthlyChallenge44",
+   "bundle45",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   48,
+   "CommunityMonthlyChallenge45",
+   "bundle46",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   49,
+   "CommunityMonthlyChallenge46",
+   "bundle47",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   50,
+   "CommunityMonthlyChallenge47",
+   "bundle48",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   51,
+   "CommunityMonthlyChallenge48",
+   "bundle49",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10000,
+   "BadgeChallenge_TheSwift",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10001,
+   "BadgeChallenge_TheSwift_Req01",
+   "Beat a Gauntlet Node in 12 minutes",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":720000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10002,
+   "BadgeChallenge_ThePunctual",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10003,
+   "BadgeChallenge_ThePunctual_Req01",
+   "Beat a Gauntlet Node in 16 minutes",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":960000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10004,
+   "BadgeChallenge_Speedrunner",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10005,
+   "BadgeChallenge_Speedrunner_Req01",
+   "Beat a Gauntlet Node in 8 minutes",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10006,
+   "BadgeChallenge_Chronomancer",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10007,
+   "BadgeChallenge_Chronomancer_Req01",
+   "Beat a Gauntlet Node in 6 minutes on Hard Difficulty or above",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":360000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10008,
+   "BadgeChallenge_TheTimeless",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10009,
+   "BadgeChallenge_TheTimeless_Req01",
+   "Defeat a Boss in 10 minutes on Extreme Difficulty or above",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireAotgMissionNodeType\":\"Boss\" , \"RequireMinGauntletDifficulty\":\"Extreme\", \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":600000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10010,
+   "BadgeChallenge_ChildOfHermes",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10011,
+   "BadgeChallenge_ChildOfHermes_Req01",
+   "Beat a Gauntlet Node in 8 min playing as Greek",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":0, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10012,
+   "BadgeChallenge_WarriorOfHorus",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10013,
+   "BadgeChallenge_WarriorOfHorus_Req01",
+   "Beat a Gauntlet Node in 8 min playing as Egyptian",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":1, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10014,
+   "BadgeChallenge_HermodsFury",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10015,
+   "BadgeChallenge_HermodsFury_Req01",
+   "Beat a Gauntlet Node in 8 min playing as Norse",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":2, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10016,
+   "BadgeChallenge_ZephyrusWing",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10017,
+   "BadgeChallenge_ZephyrusWing_Req01",
+   "Beat a Gauntlet Node in 8 min playing as Atlantean",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":3, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10018,
+   "BadgeChallenge_TheTempest",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10019,
+   "BadgeChallenge_TheTempest_Req01",
+   "Beat a Gauntlet Node in 8 min playing as Chinese",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":4, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10020,
+   "BadgeChallenge_FujinsGale",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10021,
+   "BadgeChallenge_FujinsGale_Req01",
+   "Beat a Gauntlet Node in 8 min playing as Japanese",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":5, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"Count\": 1, \"Time\":{\"EventCount\":1, \"Timeframe\":480000, \"CheckTimeFrameFromStartOfMatch\":true} }"
+  ],
+  [
+   10022,
+   "BadgeChallenge_TheLucky",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10023,
+   "BadgeChallenge_TheLucky_Req01",
+   "Complete 5 nodes without losing a life",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"AvatarStatCheck\", \"Tracked\":true, \"RequireAvatarStatChecks\":[{\"avatarStatName\":\"STAT_GAUNTLET_NODES_ANY_DIFFICULTY_CURRENT_STREAK\",\"comparison\":\">=\",\"value\":5}]}"
+  ],
+  [
+   10024,
+   "BadgeChallenge_TheUnscathed",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10025,
+   "BadgeChallenge_TheUnscathed_Req01",
+   "Complete a labyrinth run without losing a life",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\", \"LifeCount\":3}"
+  ],
+  [
+   10026,
+   "BadgeChallenge_FlawlessExecutioner",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10027,
+   "BadgeChallenge_FlawlessExecutioner_Req01",
+   "Complete 25 nodes without losing a life",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"AvatarStatCheck\", \"Tracked\":true, \"RequireAvatarStatChecks\":[{\"avatarStatName\":\"STAT_GAUNTLET_NODES_ANY_DIFFICULTY_CURRENT_STREAK\",\"comparison\":\">=\",\"value\":25}]}"
+  ],
+  [
+   10028,
+   "BadgeChallenge_Demigod",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10030,
+   "BadgeChallenge_God",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10032,
+   "BadgeChallenge_MinotaurOverlord",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10033,
+   "BadgeChallenge_MinotaurOverlord_Req01",
+   "Defeat a labyrinth boss on any Difficulty",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10034,
+   "BadgeChallenge_BossTamer",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10035,
+   "BadgeChallenge_BossTamer_Req01",
+   "Defeat a labyrinth boss on Hard or Titan",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10036,
+   "BadgeChallenge_LordOfTheLabyrinth",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10037,
+   "BadgeChallenge_LordOfTheLabyrinth_Req01",
+   "Defeat a labyrinth boss on Extreme or above",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Extreme\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10038,
+   "BadgeChallenge_Progenitor",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10039,
+   "BadgeChallenge_Progenitor_Req01",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Zeus",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Zeus\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10040,
+   "BadgeChallenge_Progenitor_Req02",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Hades",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Hades\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10041,
+   "BadgeChallenge_Progenitor_Req03",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Poseidon",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Poseidon\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10042,
+   "BadgeChallenge_Progenitor_Req04",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Ra",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Ra\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10043,
+   "BadgeChallenge_Progenitor_Req05",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Isis",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Isis\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10044,
+   "BadgeChallenge_Progenitor_Req06",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Set",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Set\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10045,
+   "BadgeChallenge_Progenitor_Req07",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Thor",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Thor\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10046,
+   "BadgeChallenge_Progenitor_Req08",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Odin",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Odin\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10047,
+   "BadgeChallenge_Progenitor_Req09",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Loki",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Loki\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10048,
+   "BadgeChallenge_Progenitor_Req10",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Kronos",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Kronos\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10049,
+   "BadgeChallenge_Progenitor_Req11",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Oranos",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Oranos\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10050,
+   "BadgeChallenge_Progenitor_Req12",
+   "Defeat a Labyrinth boss on Legendary with all Major Gods - Gaia",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Gaia\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10051,
+   "BadgeChallenge_ChildOfTheseus",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10052,
+   "BadgeChallenge_ChildOfTheseus_Req01",
+   "Defeat a labyrinth boss playing as Greek",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":0, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10053,
+   "BadgeChallenge_Gatekeeper",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10054,
+   "BadgeChallenge_Gatekeeper_Req01",
+   "Defeat a labyrinth boss playing as Egyptian",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":1, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10055,
+   "BadgeChallenge_Marauder",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10056,
+   "BadgeChallenge_Marauder_Req01",
+   "Defeat a labyrinth boss playing as Norse",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":2, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10057,
+   "BadgeChallenge_HandOfAtlas",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10058,
+   "BadgeChallenge_HandOfAtlas_Req01",
+   "Defeat a labyrinth boss playing as Atlantean",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":3, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10059,
+   "BadgeChallenge_Emperor",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10060,
+   "BadgeChallenge_Emperor_Req01",
+   "Defeat a labyrinth boss playing as Chinese",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":4, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10061,
+   "BadgeChallenge_Daimyo",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10062,
+   "BadgeChallenge_Daimyo_Req01",
+   "Defeat a labyrinth boss playing as Japanese",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":5, \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10063,
+   "BadgeChallenge_IronFist",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10064,
+   "BadgeChallenge_IronFist_Req01",
+   "Defeat a labyrinth boss on Standard or above with no Blessings equipped",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Standard\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10065,
+   "BadgeChallenge_Tyrant",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10066,
+   "BadgeChallenge_Tyrant_Req01",
+   "Defeat a labyrinth boss on Hard or above with no Blessings equipped",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10067,
+   "BadgeChallenge_PrimordialBeing",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10068,
+   "BadgeChallenge_PrimordialBeing_Req01",
+   "Defeat a labyrinth boss on Legendary or above with no Blessings equipped",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10069,
+   "BadgeChallenge_SupremeDeity",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10070,
+   "BadgeChallenge_SupremeDeity_Req01",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Zeus",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Zeus\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10071,
+   "BadgeChallenge_SupremeDeity_Req02",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Hades",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Hades\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10072,
+   "BadgeChallenge_SupremeDeity_Req03",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Poseidon",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Poseidon\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10073,
+   "BadgeChallenge_SupremeDeity_Req04",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Ra",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Ra\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10074,
+   "BadgeChallenge_SupremeDeity_Req05",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Isis",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Isis\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10075,
+   "BadgeChallenge_SupremeDeity_Req06",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Set",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Set\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10076,
+   "BadgeChallenge_SupremeDeity_Req07",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Thor",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Thor\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10077,
+   "BadgeChallenge_SupremeDeity_Req08",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Odin",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Odin\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10078,
+   "BadgeChallenge_SupremeDeity_Req09",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Loki",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Loki\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10079,
+   "BadgeChallenge_SupremeDeity_Req10",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Kronos",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Kronos\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10080,
+   "BadgeChallenge_SupremeDeity_Req11",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Oranos",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Oranos\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10081,
+   "BadgeChallenge_SupremeDeity_Req12",
+   "Defeat a labyrinth boss on Legendary with no Blessings equipped using all Major Gods - Gaia",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Gaia\", \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Legendary\", \"RequireWonGame\":true, \"RequireGauntletNumberBlessings\":0, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10082,
+   "BadgeChallenge_Spartan",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10083,
+   "BadgeChallenge_Spartan_Req01",
+   "Defeat a labyrinth boss on Hard playing as Greek with no Heroic Blessings or stronger",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":0, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletBlessingRarity\":\"Heroic\",\"RequireGauntletBlessingRarityComparison\":\"<\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10084,
+   "BadgeChallenge_RasChosen",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10085,
+   "BadgeChallenge_RasChosen_Req01",
+   "Defeat a labyrinth boss on Hard playing as Egyptian with no Heroic Blessings or stronger",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":1, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletBlessingRarity\":\"Heroic\",\"RequireGauntletBlessingRarityComparison\":\"<\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10086,
+   "BadgeChallenge_BloodAxe",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10087,
+   "BadgeChallenge_BloodAxe_Req01",
+   "Defeat a labyrinth boss on Hard playing as Norse with no Heroic Blessings or stronger",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":2, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletBlessingRarity\":\"Heroic\",\"RequireGauntletBlessingRarityComparison\":\"<\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10088,
+   "BadgeChallenge_ChampionOfAtlantis",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10089,
+   "BadgeChallenge_ChampionOfAtlantis_Req01",
+   "Defeat a labyrinth boss on Hard playing as Atlantean with no Heroic Blessings or stronger",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":3, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletBlessingRarity\":\"Heroic\",\"RequireGauntletBlessingRarityComparison\":\"<\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10090,
+   "BadgeChallenge_JadeEmperor",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10091,
+   "BadgeChallenge_JadeEmperor_Req01",
+   "Defeat a labyrinth boss on Hard playing as Chinese with no Heroic Blessings or stronger",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":4, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletBlessingRarity\":\"Heroic\",\"RequireGauntletBlessingRarityComparison\":\"<\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10092,
+   "BadgeChallenge_GreaterVirtue",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10093,
+   "BadgeChallenge_GreaterVirtue_Req01",
+   "Defeat a labyrinth boss on Hard playing as Japanese with no Heroic Blessings or stronger",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"RequireCulture\":5, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireGauntletBlessingRarity\":\"Heroic\",\"RequireGauntletBlessingRarityComparison\":\"<\", \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10094,
+   "BadgeChallenge_ConquerorOfOlympus",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10095,
+   "BadgeChallenge_ConquerorOfOlympus_Req01",
+   "Defeat a labyrinth boss with each Greek Major God - Zeus",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Zeus\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10096,
+   "BadgeChallenge_ConquerorOfOlympus_Req02",
+   "Defeat a labyrinth boss with each Greek Major God - Hades",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Hades\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10097,
+   "BadgeChallenge_ConquerorOfOlympus_Req03",
+   "Defeat a labyrinth boss with each Greek Major God - Poseidon",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Poseidon\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10098,
+   "BadgeChallenge_RulerOfTheNile",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10099,
+   "BadgeChallenge_RulerOfTheNile_Req01",
+   "Defeat a labyrinth boss with each Egyptian Major God - Ra",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Ra\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10100,
+   "BadgeChallenge_RulerOfTheNile_Req02",
+   "Defeat a labyrinth boss with each Egyptian Major God - Isis",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Isis\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10101,
+   "BadgeChallenge_RulerOfTheNile_Req03",
+   "Defeat a labyrinth boss with each Egyptian Major God - Set",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Set\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10102,
+   "BadgeChallenge_ChampionOfValhalla",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10103,
+   "BadgeChallenge_ChampionOfValhalla_Req01",
+   "Defeat a labyrinth boss with each Norse Major God - Thor",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Thor\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10104,
+   "BadgeChallenge_ChampionOfValhalla_Req02",
+   "Defeat a labyrinth boss with each Norse Major God - Odin",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Odin\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10105,
+   "BadgeChallenge_ChampionOfValhalla_Req03",
+   "Defeat a labyrinth boss with each Norse Major God - Loki",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Loki\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10106,
+   "BadgeChallenge_Utopian",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10107,
+   "BadgeChallenge_Utopian_Req01",
+   "Defeat a labyrinth boss with each Atlantean Major God - Kronos",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Kronos\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10108,
+   "BadgeChallenge_Utopian_Req02",
+   "Defeat a labyrinth boss with each Atlantean Major God - Oranos",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Oranos\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10109,
+   "BadgeChallenge_Utopian_Req03",
+   "Defeat a labyrinth boss with each Atlantean Major God - Gaia",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Gaia\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10110,
+   "BadgeChallenge_PrimordialThunder",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10111,
+   "BadgeChallenge_PrimordialThunder_Req01",
+   "Defeat a labyrinth boss with each Chinese Major God - Fuxi",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Fuxi\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10112,
+   "BadgeChallenge_PrimordialThunder_Req02",
+   "Defeat a labyrinth boss with each Chinese Major God - Nuwa",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Nuwa\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10113,
+   "BadgeChallenge_PrimordialThunder_Req03",
+   "Defeat a labyrinth boss with each Chinese Major God - Shennong",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Shennong\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10114,
+   "BadgeChallenge_ChildOfIzanami",
+   "tracker",
+   null,
+   null,
+   null,
+   1,
+   ""
+  ],
+  [
+   10115,
+   "BadgeChallenge_ChildOfIzanami_Req01",
+   "Defeat a labyrinth boss with each Japanese Major God - Amaterasu",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Amaterasu\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10116,
+   "BadgeChallenge_ChildOfIzanami_Req02",
+   "Defeat a labyrinth boss with each Japanese Major God - Tsukuyomi",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Tsukuyomi\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10117,
+   "BadgeChallenge_ChildOfIzanami_Req03",
+   "Defeat a labyrinth boss with each Japanese Major God - Susanoo",
+   null,
+   null,
+   null,
+   1,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"RequireMajorGod\":\"Susanoo\", \"RequireGauntlet\":true, \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\"}"
+  ],
+  [
+   10118,
+   "BadgeChallenge_Demigod_Req01_FIXED",
+   "Complete 5 labyrinth runs on Hard or above without losing a life",
+   null,
+   null,
+   null,
+   5,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"Count\":5, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Hard\", \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\", \"LifeCount\":3}"
+  ],
+  [
+   10119,
+   "BadgeChallenge_God_Req01_FIXED",
+   "Complete 10 labyrinth runs on Extreme or above without losing a life",
+   null,
+   null,
+   null,
+   10,
+   "{ \"Name\": \"PlayGame\", \"Tracked\":true, \"Count\":10, \"RequireGauntlet\":true, \"RequireMinGauntletDifficulty\":\"Extreme\", \"RequireWonGame\":true, \"RequireAotgMissionNodeType\":\"Boss\", \"LifeCount\":3}"
+  ]
+ ],
+ "achievementIds": {
+  "4": "ACHIEVEMENT_ANNIHILATION",
+  "5": "ACHIEVEMENT_DEMOLITION",
+  "6": "ACHIEVEMENT_CREATING_A_MASTERPIECE",
+  "7": "ACHIEVEMENT_HORROR_UNLEASHED",
+  "8": "ACHIEVEMENT_I_BELIEVE_THEY_CAN_FLY",
+  "10": "ACHIEVEMENT_AUTO_EVERYTHING",
+  "11": "ACHIEVEMENT_BIG_BOOMER",
+  "12": "ACHIEVEMENT_CYCLOPEAN_MASONRY",
+  "13": "ACHIEVEMENT_AGE_AGAINST_THE_MACHINE",
+  "14": "ACHIEVEMENT_FIRST_BLOOD",
+  "15": "ACHIEVEMENT_BOXING_MATCH",
+  "16": "ACHIEVEMENT_ZEUS_EAT_TOWN_CENTER",
+  "18": "ACHIEVEMENT_POSEIDONS_REVOLT",
+  "19": "ACHIEVEMENT_CENTUM_CENTAURI",
+  "21": "ACHIEVEMENT_ANUBITTEN",
+  "22": "ACHIEVEMENT_A_HERO_IN_THE_MAKING",
+  "23": "ACHIEVEMENT_AND_SO_IT_BEGINS",
+  "24": "ACHIEVEMENT_TO_HADES_AND_BACK",
+  "25": "ACHIEVEMENT_OSIRIS_REBORN",
+  "26": "ACHIEVEMENT_THIS_IS_FOR_CHIRON",
+  "27": "ACHIEVEMENT_ARKANTOS_ASCENDED",
+  "28": "ACHIEVEMENT_INTO_THE_MINES",
+  "29": "ACHIEVEMENT_FREYRS_GIFT",
+  "30": "ACHIEVEMENT_NEW_WORLD_NEW_GODS",
+  "31": "ACHIEVEMENT_HONOR_TO_KASTOR",
+  "32": "ACHIEVEMENT_FAST_FOOD",
+  "33": "ACHIEVEMENT_NO_TIME_FOR_MORTALS",
+  "34": "ACHIEVEMENT_ALL_IN",
+  "35": "ACHIEVEMENT_HOPLITE_HERESY",
+  "36": "ACHIEVEMENT_HERSIR_YOUR_HONOR",
+  "37": "ACHIEVEMENT_PROWL_PATROL",
+  "38": "ACHIEVEMENT_TITANIC_TERROR",
+  "39": "ACHIEVEMENT_WRATH_OF_THE_GODS",
+  "40": "ACHIEVEMENT_CHONKERS",
+  "41": "ACHIEVEMENT_PRAISE_THE_SUN",
+  "42": "ACHIEVEMENT_PET_OF_SET",
+  "43": "ACHIEVEMENT_THORIUM_MINING",
+  "44": "ACHIEVEMENT_KRONOS_TELEPHONE_BOOTH",
+  "45": "ACHIEVEMENT_MINOAN_TENNIS",
+  "46": "ACHIEVEMENT_RIDE_OF_THE_VALKYRIES",
+  "47": "ACHIEVEMENT_CARE_AND_CALAMITY",
+  "48": "ACHIEVEMENT_BEASTLY_BULWARK",
+  "49": "ACHIEVEMENT_ANGER_PROBLEMS",
+  "50": "ACHIEVEMENT_NORSE_SPACE_PROGRAM",
+  "51": "ACHIEVEMENT_TERRIF_EYEING",
+  "52": "ACHIEVEMENT_OMNIVORE",
+  "53": "ACHIEVEMENT_CHIRONS_APPRENTICE",
+  "54": "ACHIEVEMENT_POWER_OF_THE_GODS",
+  "55": "ACHIEVEMENT_PREPARATION",
+  "56": "ACHIEVEMENT_LOST_TREASURE",
+  "57": "ACHIEVEMENT_AOTG_SLAYER",
+  "59": "ACHIEVEMENT_AOTG_BLESSED_BE_THE_LEGEND",
+  "60": "ACHIEVEMENT_AOTG_CHOSEN_BY_THE_GODS",
+  "61": "ACHIEVEMENT_AOTG_GODS_FAVORITE",
+  "62": "ACHIEVEMENT_AOTG_DEICIDE",
+  "63": "ACHIEVEMENT_AOTG_TRAVELER",
+  "64": "ACHIEVEMENT_AOTG_NOMAD",
+  "65": "ACHIEVEMENT_AOTG_UNDERDOG",
+  "66": "ACHIEVEMENT_AOTG_IRONSIDE",
+  "67": "ACHIEVEMENT_AOTG_VETERAN",
+  "68": "ACHIEVEMENT_AOTG_WAR_HERO",
+  "69": "ACHIEVEMENT_AOTG_THROUGH_THICK_AND_THIN",
+  "70": "ACHIEVEMENT_IMPERIAL_GARDEN",
+  "71": "ACHIEVEMENT_FORGED_FROM_CLAY",
+  "72": "ACHIEVEMENT_AGRICULTURAL_REVOLUTION",
+  "73": "ACHIEVEMENT_ARCHAIC_SHOT_PUT",
+  "74": "ACHIEVEMENT_BRINGING_ALL_KINDS_OF_HURT",
+  "75": "ACHIEVEMENT_THREE_KINGDOMS",
+  "76": "ACHIEVEMENT_TERRACOTTA_ARMY",
+  "77": "ACHIEVEMENT_BEAST_BUFFET",
+  "78": "ACHIEVEMENT_DONT_MESS_WITH_ME",
+  "79": "ACHIEVEMENT_SET_THE_WORLD_ON_FIRE",
+  "80": "ACHIEVEMENT_TENPIN_STRIKE",
+  "81": "ACHIEVEMENT_RAIN_OF_PAIN",
+  "82": "ACHIEVEMENT_EMBARRASSMENT_OF_RICHES",
+  "83": "ACHIEVEMENT_PICKUP_ARTIST",
+  "84": "ACHIEVEMENT_BECOME_IMMORTAL",
+  "85": "ACHIEVEMENT_PILLAR_OF_THE_COMMUNITY",
+  "86": "ACHIEVEMENT_ALL_YOUR_BASE_ARE_BELONG_TO_US",
+  "87": "ACHIEVEMENT_GOTTA_CATCH_EM_ALL",
+  "88": "ACHIEVEMENT_IT_DOESNT_LOOK_SCRATCHED",
+  "89": "ACHIEVEMENT_BURN_BABY_BURN",
+  "90": "ACHIEVEMENT_XUANYUAN_SWORD",
+  "91": "ACHIEVEMENT_THE_SECRET_GROVE",
+  "92": "ACHIEVEMENT_RELIC_RACER",
+  "93": "ACHIEVEMENT_BANDIT_BUSTER",
+  "94": "ACHIEVEMENT_AGE_OF_THE_GOAT",
+  "95": "ACHIEVEMENT_HERDING_FOR_GLORY",
+  "96": "ACHIEVEMENT_HEARTH_AND_HOME",
+  "97": "ACHIEVEMENT_LUPINE_LETHALITY",
+  "98": "ACHIEVEMENT_WITHER_WOODCHIPPER",
+  "99": "ACHIEVEMENT_WOODLAND_WHAMMY",
+  "100": "ACHIEVEMENT_BATTLE_BARD",
+  "101": "ACHIEVEMENT_INVINCIBLE_WARLORD",
+  "102": "ACHIEVEMENT_ETERNAL_REAPER",
+  "103": "ACHIEVEMENT_TYPHOON_SEASON",
+  "104": "ACHIEVEMENT_BUSHIDO_MASTER",
+  "105": "ACHIEVEMENT_CLASSICAL_CHAMPIONS",
+  "106": "ACHIEVEMENT_WHEEL_OF_MISFORTUNE",
+  "107": "ACHIEVEMENT_ITS_OVER_NINE_THOUSAND",
+  "108": "ACHIEVEMENT_THE_ONE_AND_ONI",
+  "109": "ACHIEVEMENT_THE_ULTIMATE_DISCOUNT",
+  "110": "ACHIEVEMENT_A_BLESSING_SENT_FROM_HEAVEN",
+  "111": "ACHIEVEMENT_PROVEN_WORTHY",
+  "112": "ACHIEVEMENT_CUT_OFF_THE_HEAD_OF_THE_SNAKE",
+  "113": "ACHIEVEMENT_EMERGENCY_RESPONSE",
+  "114": "ACHIEVEMENT_LABYRINTH_RUNNER",
+  "115": "ACHIEVEMENT_GOD_TIER",
+  "116": "ACHIEVEMENT_A_LEGENDARY_RUSH",
+  "117": "ACHIEVEMENT_LEGENDS_ASSEMBLE",
+  "118": "ACHIEVEMENT_CONNOISSEUR_OF_THE_GODS",
+  "119": "ACHIEVEMENT_DONT_GO_IT_ALONE",
+  "120": "ACHIEVEMENT_FRIENDS_IN_THE_END",
+  "121": "ACHIEVEMENT_WE_HAVE_TITANS_AT_HOME",
+  "122": "ACHIEVEMENT_I_CHOOSE_VIOLENCE",
+  "123": "ACHIEVEMENT_ALL_DOLLED_UP",
+  "124": "ACHIEVEMENT_SEEING_RED",
+  "125": "ACHIEVEMENT_WET_GROUND",
+  "126": "ACHIEVEMENT_CLEANSING_RAIN",
+  "127": "ACHIEVEMENT_MIGRATION",
+  "128": "ACHIEVEMENT_RETURN_TO_SENDER",
+  "129": "ACHIEVEMENT_HADES_RUIN",
+  "130": "ACHIEVEMENT_FEAST_DENIED",
+  "131": "ACHIEVEMENT_SMOKE_AND_MIRRORS",
+  "132": "ACHIEVEMENT_DIVINE_NOURISHMENT",
+  "133": "ACHIEVEMENT_ITS_A_TRAP",
+  "134": "ACHIEVEMENT_DAILY_RITUAL",
+  "135": "ACHIEVEMENT_EATEN_ALIVE",
+  "136": "ACHIEVEMENT_SURPRISE",
+  "137": "ACHIEVEMENT_GODSPEED",
+  "138": "ACHIEVEMENT_DREAMWEAVER",
+  "139": "ACHIEVEMENT_PROIMORDIAL_HUNGER"
+ },
+ "rarity": {
+  "ACHIEVEMENT_CHONKERS": 55.6,
+  "ACHIEVEMENT_AND_SO_IT_BEGINS": 55.4,
+  "ACHIEVEMENT_A_HERO_IN_THE_MAKING": 53.8,
+  "ACHIEVEMENT_POWER_OF_THE_GODS": 53.1,
+  "ACHIEVEMENT_WRATH_OF_THE_GODS": 51.1,
+  "ACHIEVEMENT_PREPARATION": 46.2,
+  "ACHIEVEMENT_HORROR_UNLEASHED": 46.2,
+  "ACHIEVEMENT_CREATING_A_MASTERPIECE": 44.7,
+  "ACHIEVEMENT_MINOAN_TENNIS": 44.2,
+  "ACHIEVEMENT_ZEUS_EAT_TOWN_CENTER": 43.6,
+  "ACHIEVEMENT_I_BELIEVE_THEY_CAN_FLY": 41.9,
+  "ACHIEVEMENT_BIG_BOOMER": 37.1,
+  "ACHIEVEMENT_ALL_IN": 34.4,
+  "ACHIEVEMENT_FIRST_BLOOD": 34.2,
+  "ACHIEVEMENT_LOST_TREASURE": 33.5,
+  "ACHIEVEMENT_FAST_FOOD": 32.4,
+  "ACHIEVEMENT_NORSE_SPACE_PROGRAM": 31.3,
+  "ACHIEVEMENT_TO_HADES_AND_BACK": 30.6,
+  "ACHIEVEMENT_RIDE_OF_THE_VALKYRIES": 30.4,
+  "ACHIEVEMENT_CYCLOPEAN_MASONRY": 29.3,
+  "ACHIEVEMENT_CENTUM_CENTAURI": 27.9,
+  "ACHIEVEMENT_ANGER_PROBLEMS": 25.9,
+  "ACHIEVEMENT_BEASTLY_BULWARK": 25.6,
+  "ACHIEVEMENT_NO_TIME_FOR_MORTALS": 24.8,
+  "ACHIEVEMENT_ANNIHILATION": 24.4,
+  "ACHIEVEMENT_DEMOLITION": 21.3,
+  "ACHIEVEMENT_OSIRIS_REBORN": 20.8,
+  "ACHIEVEMENT_AOTG_BLESSED_BE_THE_LEGEND": 20,
+  "ACHIEVEMENT_NEW_WORLD_NEW_GODS": 18.9,
+  "ACHIEVEMENT_SET_THE_WORLD_ON_FIRE": 18.2,
+  "ACHIEVEMENT_THIS_IS_FOR_CHIRON": 17.5,
+  "ACHIEVEMENT_ARKANTOS_ASCENDED": 17.1,
+  "ACHIEVEMENT_INTO_THE_MINES": 16.9,
+  "ACHIEVEMENT_RAIN_OF_PAIN": 16.8,
+  "ACHIEVEMENT_AOTG_CHOSEN_BY_THE_GODS": 15.4,
+  "ACHIEVEMENT_BECOME_IMMORTAL": 14.3,
+  "ACHIEVEMENT_FREYRS_GIFT": 14.2,
+  "ACHIEVEMENT_PRAISE_THE_SUN": 13.9,
+  "ACHIEVEMENT_HOPLITE_HERESY": 13.9,
+  "ACHIEVEMENT_HONOR_TO_KASTOR": 13.8,
+  "ACHIEVEMENT_AOTG_SLAYER": 13.5,
+  "ACHIEVEMENT_CARE_AND_CALAMITY": 13.2,
+  "ACHIEVEMENT_THE_ONE_AND_ONI": 13,
+  "ACHIEVEMENT_BEAST_BUFFET": 12.6,
+  "ACHIEVEMENT_BURN_BABY_BURN": 12.4,
+  "ACHIEVEMENT_ITS_OVER_NINE_THOUSAND": 12.2,
+  "ACHIEVEMENT_ALL_YOUR_BASE_ARE_BELONG_TO_US": 11.8,
+  "ACHIEVEMENT_A_BLESSING_SENT_FROM_HEAVEN": 11.6,
+  "ACHIEVEMENT_BUSHIDO_MASTER": 11.3,
+  "ACHIEVEMENT_TITANIC_TERROR": 10.3,
+  "ACHIEVEMENT_WHEEL_OF_MISFORTUNE": 10.1,
+  "ACHIEVEMENT_BOXING_MATCH": 9.3,
+  "ACHIEVEMENT_TENPIN_STRIKE": 8.7,
+  "ACHIEVEMENT_FORGED_FROM_CLAY": 8.6,
+  "ACHIEVEMENT_GOTTA_CATCH_EM_ALL": 8.5,
+  "ACHIEVEMENT_PILLAR_OF_THE_COMMUNITY": 8.4,
+  "ACHIEVEMENT_AOTG_TRAVELER": 8.4,
+  "ACHIEVEMENT_AOTG_DEICIDE": 8.4,
+  "ACHIEVEMENT_AGE_AGAINST_THE_MACHINE": 8.2,
+  "ACHIEVEMENT_XUANYUAN_SWORD": 8.1,
+  "ACHIEVEMENT_THREE_KINGDOMS": 7.8,
+  "ACHIEVEMENT_PICKUP_ARTIST": 7.1,
+  "ACHIEVEMENT_HERSIR_YOUR_HONOR": 7.1,
+  "ACHIEVEMENT_AOTG_THROUGH_THICK_AND_THIN": 7,
+  "ACHIEVEMENT_EMBARRASSMENT_OF_RICHES": 6.8,
+  "ACHIEVEMENT_PROVEN_WORTHY": 6.7,
+  "ACHIEVEMENT_AUTO_EVERYTHING": 5.8,
+  "ACHIEVEMENT_POSEIDONS_REVOLT": 5.3,
+  "ACHIEVEMENT_ETERNAL_REAPER": 5.1,
+  "ACHIEVEMENT_BATTLE_BARD": 5,
+  "ACHIEVEMENT_WET_GROUND": 4.9,
+  "ACHIEVEMENT_AOTG_NOMAD": 4.8,
+  "ACHIEVEMENT_MIGRATION": 4.7,
+  "ACHIEVEMENT_AOTG_IRONSIDE": 4.6,
+  "ACHIEVEMENT_LABYRINTH_RUNNER": 4.3,
+  "ACHIEVEMENT_CHIRONS_APPRENTICE": 4.2,
+  "ACHIEVEMENT_ANUBITTEN": 4.2,
+  "ACHIEVEMENT_AGRICULTURAL_REVOLUTION": 4.1,
+  "ACHIEVEMENT_SURPRISE": 3.8,
+  "ACHIEVEMENT_HERDING_FOR_GLORY": 3.8,
+  "ACHIEVEMENT_OMNIVORE": 3.8,
+  "ACHIEVEMENT_TYPHOON_SEASON": 3.7,
+  "ACHIEVEMENT_THORIUM_MINING": 3.6,
+  "ACHIEVEMENT_TERRIF_EYEING": 3.5,
+  "ACHIEVEMENT_PET_OF_SET": 3.5,
+  "ACHIEVEMENT_CLASSICAL_CHAMPIONS": 3.1,
+  "ACHIEVEMENT_AOTG_VETERAN": 2.8,
+  "ACHIEVEMENT_SMOKE_AND_MIRRORS": 2.7,
+  "ACHIEVEMENT_EMERGENCY_RESPONSE": 2.6,
+  "ACHIEVEMENT_INVINCIBLE_WARLORD": 2.6,
+  "ACHIEVEMENT_DONT_MESS_WITH_ME": 2.5,
+  "ACHIEVEMENT_PROWL_PATROL": 2.5,
+  "ACHIEVEMENT_ALL_DOLLED_UP": 2.2,
+  "ACHIEVEMENT_IT_DOESNT_LOOK_SCRATCHED": 2.2,
+  "ACHIEVEMENT_BRINGING_ALL_KINDS_OF_HURT": 2.1,
+  "ACHIEVEMENT_DAILY_RITUAL": 1.9,
+  "ACHIEVEMENT_BANDIT_BUSTER": 1.9,
+  "ACHIEVEMENT_THE_SECRET_GROVE": 1.9,
+  "ACHIEVEMENT_DONT_GO_IT_ALONE": 1.9,
+  "ACHIEVEMENT_IMPERIAL_GARDEN": 1.9,
+  "ACHIEVEMENT_DIVINE_NOURISHMENT": 1.8,
+  "ACHIEVEMENT_RETURN_TO_SENDER": 1.8,
+  "ACHIEVEMENT_AOTG_GODS_FAVORITE": 1.8,
+  "ACHIEVEMENT_WOODLAND_WHAMMY": 1.7,
+  "ACHIEVEMENT_ARCHAIC_SHOT_PUT": 1.7,
+  "ACHIEVEMENT_EATEN_ALIVE": 1.6,
+  "ACHIEVEMENT_TERRACOTTA_ARMY": 1.6,
+  "ACHIEVEMENT_KRONOS_TELEPHONE_BOOTH": 1.6,
+  "ACHIEVEMENT_FEAST_DENIED": 1.5,
+  "ACHIEVEMENT_DREAMWEAVER": 1.3,
+  "ACHIEVEMENT_FRIENDS_IN_THE_END": 1.3,
+  "ACHIEVEMENT_AOTG_WAR_HERO": 1.3,
+  "ACHIEVEMENT_THE_ULTIMATE_DISCOUNT": 1.2,
+  "ACHIEVEMENT_CLEANSING_RAIN": 1.1,
+  "ACHIEVEMENT_AOTG_UNDERDOG": 1.1,
+  "ACHIEVEMENT_HEARTH_AND_HOME": 1,
+  "ACHIEVEMENT_WITHER_WOODCHIPPER": 0.9,
+  "ACHIEVEMENT_GODSPEED": 0.8,
+  "ACHIEVEMENT_CUT_OFF_THE_HEAD_OF_THE_SNAKE": 0.8,
+  "ACHIEVEMENT_ITS_A_TRAP": 0.7,
+  "ACHIEVEMENT_LEGENDS_ASSEMBLE": 0.7,
+  "ACHIEVEMENT_PROIMORDIAL_HUNGER": 0.6,
+  "ACHIEVEMENT_LUPINE_LETHALITY": 0.5,
+  "ACHIEVEMENT_A_LEGENDARY_RUSH": 0.5,
+  "ACHIEVEMENT_SEEING_RED": 0.4,
+  "ACHIEVEMENT_AGE_OF_THE_GOAT": 0.4,
+  "ACHIEVEMENT_HADES_RUIN": 0.3,
+  "ACHIEVEMENT_RELIC_RACER": 0.3,
+  "ACHIEVEMENT_CONNOISSEUR_OF_THE_GODS": 0.3,
+  "ACHIEVEMENT_WE_HAVE_TITANS_AT_HOME": 0.2,
+  "ACHIEVEMENT_I_CHOOSE_VIOLENCE": 0.1,
+  "ACHIEVEMENT_GOD_TIER": 0.1
+ }
+}

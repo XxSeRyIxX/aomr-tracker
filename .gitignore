@@ -1,0 +1,26 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+publish/
+out/
+artifacts/
+
+# Notes that stay on this computer
+private/
+
+# The site's settings, written when it is published (pages.yml)
+app/config.json
+
+# Wrangler's local files (relay/)
+.wrangler/
+
+# IDE / tooling
+.vs/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+
+# OS noise
+.DS_Store
+Thumbs.db

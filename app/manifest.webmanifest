@@ -1,0 +1,13 @@
+{
+  "name": "AoM Retold Tracker",
+  "short_name": "AoMR Tracker",
+  "description": "Every achievement and badge of Age of Mythology: Retold, and how far along you are on the ones you don't have yet.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0c1120",
+  "theme_color": "#0c1120",
+  "icons": [
+    { "src": "icon.png", "sizes": "256x256", "type": "image/png", "purpose": "any" }
+  ]
+}

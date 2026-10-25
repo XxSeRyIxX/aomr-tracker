@@ -1,0 +1,9 @@
+# The website's relay to the game's public profile pages. Deploy from this folder: npx wrangler deploy
+name = "aomr-tracker-relay"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[vars]
+# The only website it answers, besides pages served from the same computer.
+SITE = "https://xxseryixx.github.io"

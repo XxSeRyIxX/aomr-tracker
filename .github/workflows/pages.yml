@@ -1,0 +1,47 @@
+name: pages
+
+# The website is app/ as committed: what the tests checked is what goes live.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - '.github/workflows/checks.yml'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    uses: ./.github/workflows/checks.yml
+
+  deploy:
+    needs: checks
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      # The address of the site's relay (relay/), which lets it read public profiles by itself.
+      - name: Site settings
+        env:
+          RELAY_URL: ${{ vars.RELAY_URL }}
+        run: node -e "require('fs').writeFileSync('app/config.json', JSON.stringify({ relay: process.env.RELAY_URL || '' }) + '\n')"
+
+      # app/ is the site: no build step, no asset copying.
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: app
+      - id: deploy
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,18 @@
+app/art/ and app/data/ hold material from Age of Mythology: Retold.
+
+    Age of Mythology: Retold (c) Microsoft Corporation. All rights reserved.
+
+The badge and achievement images (art/badges.pack and art/achievements.pack, packed one PNG after another, with their
+places in art/badges.json and art/achievements.json), the game's texts (data/game.json), Steam's achievement list for
+the game (data/steam-schema.vdf) and the public lists of the game's servers (data/server.json: badges, their
+challenges, achievement numbers and how many players have each) are NOT part of this project's source code and are
+NOT covered by its GNU AGPL v3 licence. tools/export copies the first three from an installed copy of the game and
+tools/server-data.mjs reads the last from the servers' public pages, so the website can show the badges, the
+achievements, their names and goals without the game on hand. They must not be redistributed separately or treated as
+freely licensed material.
+
+AoM Retold Tracker was created under Microsoft's "Game Content Usage Rules" using assets from Age of Mythology:
+Retold, and it is not endorsed by or affiliated with Microsoft.
+
+If you are the rights holder and would like these removed, open an issue at
+https://github.com/XxSeRyIxX/aomr-tracker and they will be taken out.

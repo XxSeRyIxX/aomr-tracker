@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AoM Retold Tracker (dev tools)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/shell/bin/Debug/net10.0/AoMRTracker.dll",
+            "args": ["--dev"],
+            "cwd": "${workspaceFolder}/shell",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}

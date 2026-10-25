@@ -1,0 +1,155 @@
+# Builds the desktop app for Windows, macOS and Linux on every push to main, and publishes a release for tags like v1.2.3.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+    paths-ignore:
+      - 'README.md'
+      - 'NOTICE'
+      - 'LICENSE'
+      # The tools only matter through what they write into app/ and shell/.
+      - 'tools/**'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT: shell/AoMRTracker.csproj
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  checks:
+    uses: ./.github/workflows/checks.yml
+
+  build:
+    needs: checks
+    name: ${{ matrix.label }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            label: windows-x64
+            rid: win-x64
+          - os: macos-latest
+            label: macos-arm64
+            rid: osx-arm64
+          - os: macos-15-intel
+            label: macos-x64
+            rid: osx-x64
+          - os: ubuntu-latest
+            label: linux-x64
+            rid: linux-x64
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+
+      # Tag v1.2.3 -> assembly version 1.2.3; untagged builds stay at 0.0.0.
+      - name: Resolve version
+        id: version
+        shell: bash
+        run: |
+          ref='${{ github.ref }}'
+          if [[ "$ref" == refs/tags/v* ]]; then
+            echo "value=${ref#refs/tags/v}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=0.0.0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish
+        run: >
+          dotnet publish ${{ env.PROJECT }}
+          -c Release
+          -r ${{ matrix.rid }}
+          -p:Version=${{ steps.version.outputs.value }}
+          -o publish
+
+      - name: Stage (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory out | Out-Null
+          Move-Item publish/AoMRTracker.exe out/AoMRTracker-${{ matrix.label }}.exe
+
+      - name: Stage (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mkdir out
+          mv publish/AoMRTracker out/AoMRTracker-${{ matrix.label }}
+          chmod +x out/AoMRTracker-${{ matrix.label }}
+
+      # macOS only treats it as an app inside a real .app bundle, and a bundle is a folder, so it travels in a disk
+      # image. The page keeps its marks per bundle id, so the id never changes.
+      - name: Stage (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          mkdir out stage
+          APP="stage/AoM Retold Tracker.app"
+          mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
+          mv publish/AoMRTracker "$APP/Contents/MacOS/"
+          chmod +x "$APP/Contents/MacOS/AoMRTracker"
+          cat > "$APP/Contents/Info.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>CFBundleName</key><string>AoM Retold Tracker</string>
+            <key>CFBundleDisplayName</key><string>AoM Retold Tracker</string>
+            <key>CFBundleIdentifier</key><string>io.github.xxseryixx.aomrtracker</string>
+            <key>CFBundleVersion</key><string>${{ steps.version.outputs.value }}</string>
+            <key>CFBundleShortVersionString</key><string>${{ steps.version.outputs.value }}</string>
+            <key>CFBundlePackageType</key><string>APPL</string>
+            <key>CFBundleExecutable</key><string>AoMRTracker</string>
+            <key>LSMinimumSystemVersion</key><string>12.0</string>
+            <key>NSHighResolutionCapable</key><true/>
+          </dict>
+          </plist>
+          PLIST
+          ln -s /Applications stage/Applications
+          hdiutil create -volname "AoM Retold Tracker" -srcfolder stage -ov -format UDZO "out/AoMRTracker-${{ matrix.label }}.dmg"
+
+      # archive: false uploads the file as it is instead of wrapping it in a zip.
+      - uses: actions/upload-artifact@v7
+        with:
+          path: out/*
+          archive: false
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - uses: softprops/action-gh-release@v3
+        with:
+          files: artifacts/*
+          generate_release_notes: true
+          body: |
+            Download the app for your system below. Each one is a single self-contained file, with no runtime and no installer.
+
+            - **Windows**: `AoMRTracker-windows-x64.exe`
+            - **macOS**: `AoMRTracker-macos-arm64.dmg` (Apple silicon) or `AoMRTracker-macos-x64.dmg` (Intel); open it and drag the app to Applications
+            - **Linux and Steam Deck**: `AoMRTracker-linux-x64`, then `chmod +x`. It needs WebKitGTK 4.1 (`libwebkit2gtk-4.1`).
+
+            > The builds are unsigned. Only override a publisher warning for a download you trust. On macOS, after trying to open the app, use System Settings > Privacy & Security > Open Anyway.

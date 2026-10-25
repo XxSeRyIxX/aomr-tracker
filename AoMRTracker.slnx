@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/shell/">
+    <Project Path="shell/AoMRTracker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/shell/ShellChecks.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/export/Export.csproj" />
+  </Folder>
+</Solution>

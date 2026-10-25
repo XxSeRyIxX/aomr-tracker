@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/shell/AoMRTracker.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": { "kind": "build", "isDefault": true }
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "node --test tests/*.test.mjs; dotnet run --project tests/shell -c Release",
+            "problemMatcher": [],
+            "group": { "kind": "test", "isDefault": true }
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": ["publish", "${workspaceFolder}/shell/AoMRTracker.csproj", "-c", "Release", "-r", "win-x64", "-o", "${workspaceFolder}/publish"],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
