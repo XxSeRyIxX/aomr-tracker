@@ -47,7 +47,7 @@ jobs:
           - os: macos-15-intel
             label: macos-x64
             rid: osx-x64
-          - os: ubuntu-latest
+          - os: ubuntu-26.04
             label: linux-x64
             rid: linux-x64
 
@@ -130,7 +130,7 @@ jobs:
   release:
     needs: build
     if: startsWith(github.ref, 'refs/tags/v')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
     steps:
