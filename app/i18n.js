@@ -67,7 +67,6 @@ export const STRINGS = {
     'badge.tier': 'Tier {0}',
     'badge.streak': 'Current streak',
     'badge.gods': '{0} of {1} gods',
-    'detail.open': 'Show details of {0}',
     'detail.rarity': 'Players who have it',
     'detail.category': 'Category',
     'detail.tier': 'Tier',
@@ -165,6 +164,7 @@ export const STRINGS = {
     'refresh.done': 'Up to date.',
     'local.updated': 'The game saved new progress.',
     'footer.sources': 'Achievements and badges: the game\'s files, Steam or your public profile · Texts and art: the game',
+    'footer.issue': 'Report a problem',
     'error.timeout': 'The server took too long to answer.',
     'error.stopped': 'Stopped.',
     'error.offline': 'Couldn\'t reach the servers. Check your connection.',
@@ -238,7 +238,6 @@ export const STRINGS = {
     'badge.tier': 'Nivel {0}',
     'badge.streak': 'Racha actual',
     'badge.gods': '{0} de {1} dioses',
-    'detail.open': 'Ver los detalles de {0}',
     'detail.rarity': 'Jugadores que lo tienen',
     'detail.category': 'Categoría',
     'detail.tier': 'Nivel',
@@ -336,6 +335,7 @@ export const STRINGS = {
     'refresh.done': 'Todo al día.',
     'local.updated': 'El juego guardó progreso nuevo.',
     'footer.sources': 'Logros e insignias: archivos del juego, Steam o tu perfil público · Textos e imágenes: el juego',
+    'footer.issue': 'Informar de un problema',
     'error.timeout': 'El servidor tardó demasiado en responder.',
     'error.stopped': 'Detenido.',
     'error.offline': 'No se pudo contactar con los servidores. Revisa tu conexión.',
@@ -372,16 +372,24 @@ export const langForGame = steamLanguage => (['spanish', 'latam'].includes(steam
 /** "es" for a browser in Spanish, else "en". */
 export const langForBrowser = languages => ((languages ?? []).some(l => /^es\b/i.test(l)) ? 'es' : 'en');
 
+// Making a formatter is slow, and every card uses some: one of each per language.
+const formatters = new Map();
+const formatter = (kind, make) => {
+  const key = `${kind}:${current}`;
+  if (!formatters.has(key)) formatters.set(key, make());
+  return formatters.get(key);
+};
+
 /** A date in the interface language, such as "24 Oct 2026". */
 export const formatDate = unixSeconds =>
-  new Intl.DateTimeFormat(current === 'es' ? 'es-ES' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(unixSeconds * 1000));
+  formatter('date', () => new Intl.DateTimeFormat(current === 'es' ? 'es-ES' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' })).format(new Date(unixSeconds * 1000));
 
-export const formatNumber = value => new Intl.NumberFormat(current === 'es' ? 'es-ES' : 'en-US').format(value);
+export const formatNumber = value => formatter('number', () => new Intl.NumberFormat(current === 'es' ? 'es-ES' : 'en-US')).format(value);
 
 /** "3 minutes ago", "yesterday"... */
 export function formatAgo(unixMs, now = Date.now()) {
   const seconds = Math.round((unixMs - now) / 1000);
-  const rtf = new Intl.RelativeTimeFormat(current, { numeric: 'auto' });
+  const rtf = formatter('ago', () => new Intl.RelativeTimeFormat(current, { numeric: 'auto' }));
   for (const [unit, size] of [['day', 86400], ['hour', 3600], ['minute', 60]]) {
     if (Math.abs(seconds) >= size) return rtf.format(Math.round(seconds / size), unit);
   }

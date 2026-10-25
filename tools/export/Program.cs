@@ -3,7 +3,7 @@
 
 // Writes what the website takes from an installed game and Steam:
 //   app/data/game.json          the game's texts in English and Spanish, and the game build they come from
-//   app/data/steam-schema.vdf   Steam's achievement list (names and texts in every language, icons)
+//   app/data/steam-schema.vdf   Steam's achievement list (icons, and the names and texts the page shows: English and Spanish)
 //   app/art/badges.pack/.json   the badge art, packed into one file with an index of where each image starts
 //   app/art/achievements.pack/.json   the achievement art, the same way
 // Never .bin: download managers (IDM) take those over even when the page only reads them.
@@ -11,6 +11,7 @@
 // Run this after a game update: dotnet run --project tools/export -c Release [-- path\to\app]
 
 using System.Buffers.Binary;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using AoMRTracker;
@@ -33,7 +34,8 @@ string art = Path.Combine(app, "art");
 Directory.CreateDirectory(data);
 Directory.CreateDirectory(art);
 
-File.Copy(schemaFile, Path.Combine(data, "steam-schema.vdf"), overwrite: true);
+// Steam's file has 26 languages, eight times what the page reads (core.js steamTextLanguage), and every visit downloads it.
+File.WriteAllBytes(Path.Combine(data, "steam-schema.vdf"), KeepLanguages(File.ReadAllBytes(schemaFile), ["english", "spanish", "latam"]));
 
 int badges = Pack("badges", GameArt.Badges);
 int achievements = Pack("achievements", GameArt.Achievements);
@@ -76,6 +78,61 @@ int Pack(string file, string folder)
     JsonObject index = new() { ["box"] = new JsonArray(box[0], box[1]), ["at"] = at };
     File.WriteAllText(Path.Combine(art, $"{file}.json"), index.ToJsonString() + "\n");
     return at.Count;
+}
+
+// Copies Steam's binary KeyValues (the format of app/files.js parseKeyValues), with the name and description of each
+// achievement in the given languages only.
+static byte[] KeepLanguages(byte[] vdf, string[] languages)
+{
+    using MemoryStream output = new();
+    int pos = 0;
+    Copy("", "");
+    return output.ToArray();
+
+    void Copy(string parent, string name)
+    {
+        bool texts = parent == "display" && name is "name" or "desc";
+        while (pos < vdf.Length)
+        {
+            int start = pos;
+            byte type = vdf[pos++];
+            if (type is 8 or 11)
+            {
+                output.WriteByte(type);
+                return;
+            }
+            string key = Text();
+            if (type == 0)
+            {
+                output.Write(vdf, start, pos - start);
+                Copy(name, key);
+                continue;
+            }
+            pos = type switch
+            {
+                1 => SkipText(),
+                2 or 3 or 4 or 6 => pos + 4,
+                7 or 10 => pos + 8,
+                _ => throw new InvalidDataException($"Unknown KeyValues type {type} in Steam's achievement list."),
+            };
+            if (pos > vdf.Length) throw new InvalidDataException("Steam's achievement list ends early.");
+            // Steam writes some names in capitals ("LATAM"); the page reads them in lower case.
+            if (!texts || languages.Contains(key, StringComparer.OrdinalIgnoreCase)) output.Write(vdf, start, pos - start);
+        }
+    }
+
+    string Text()
+    {
+        int at = pos;
+        pos = SkipText();
+        return Encoding.UTF8.GetString(vdf, at, pos - 1 - at);
+    }
+
+    int SkipText()
+    {
+        int end = Array.IndexOf(vdf, (byte)0, pos);
+        return end < 0 ? throw new InvalidDataException("Steam's achievement list ends early.") : end + 1;
+    }
 }
 
 static JsonObject Sorted(Dictionary<string, string> table) =>

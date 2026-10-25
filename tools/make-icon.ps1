@@ -121,4 +121,56 @@ $w.Flush()
 [IO.File]::WriteAllBytes((Join-Path $out 'icon.ico'), $ico.ToArray())
 $w.Dispose()
 
-'icon.ico written to shell/, icon.png written to app/'
+# The website's link preview (og:image in index.html), also the repository's social preview: the logo, the name, what it
+# does, and a row of the game's culture badges from the art pack.
+function New-Social {
+    $width = 1280; $height = 640
+    $bmp = New-Object Drawing.Bitmap $width, $height
+    $g = [Drawing.Graphics]::FromImage($bmp)
+    $g.SmoothingMode = [Drawing.Drawing2D.SmoothingMode]::AntiAlias
+    $g.InterpolationMode = [Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+    $g.PixelOffsetMode = [Drawing.Drawing2D.PixelOffsetMode]::HighQuality
+    $g.TextRenderingHint = [Drawing.Text.TextRenderingHint]::AntiAliasGridFit
+
+    $g.FillRectangle((New-Object Drawing.Drawing2D.LinearGradientBrush (P 0 0), (P $width $height), (Rgb '#1B2B4D'), (Rgb '#0A101E')), 0, 0, $width, $height)
+    $halo = New-Object Drawing.Drawing2D.GraphicsPath
+    $halo.AddEllipse(30, 110, 420, 420)
+    $glow = New-Object Drawing.Drawing2D.PathGradientBrush $halo
+    $glow.CenterColor = [Drawing.Color]::FromArgb(90, 226, 184, 92)
+    $glow.SurroundColors = [Drawing.Color[]]@([Drawing.Color]::FromArgb(0, 226, 184, 92))
+    $g.FillPath($glow, $halo)
+    $logo = New-Logo 280
+    $g.DrawImage($logo, 100, 180, 280, 280)
+    $logo.Dispose()
+
+    $px = [Drawing.GraphicsUnit]::Pixel
+    $ink = New-Object Drawing.SolidBrush (Rgb '#ECE7DA')
+    $muted = New-Object Drawing.SolidBrush (Rgb '#9AA5BD')
+    $gold = New-Object Drawing.SolidBrush (Rgb '#E2B85C')
+    $g.DrawString('AoM Retold Tracker', (New-Object Drawing.Font 'Segoe UI Semibold', 66, ([Drawing.FontStyle]::Regular), $px), $ink, 452, 104)
+    $g.DrawString("Every achievement and badge of`nAge of Mythology: Retold, and your progress.",
+        (New-Object Drawing.Font 'Segoe UI', 31, ([Drawing.FontStyle]::Regular), $px), $muted, (New-Object Drawing.RectangleF 456, 200, 760, 90))
+
+    $index = Get-Content (Join-Path $web 'art\badges.json') -Raw | ConvertFrom-Json
+    $pack = [IO.File]::ReadAllBytes((Join-Path $web 'art\badges.pack'))
+    $x = 452
+    foreach ($name in 'conqueror_of_olympus', 'ruler_of_the_nile', 'champion_of_valhalla', 'champion_of_atlantis', 'jade_emperor', 'daimyo') {
+        $at = $index.at.$name
+        $badge = [Drawing.Image]::FromStream((New-Object IO.MemoryStream (, $pack[$at[0]..($at[0] + $at[1] - 1)])))
+        $g.DrawImage($badge, $x, 312, 112, 112)
+        $badge.Dispose()
+        $x += 124
+    }
+
+    $g.FillRectangle($gold, 456, 470, 64, 4)
+    $g.DrawString('Steam  ·  Xbox  ·  PlayStation  ·  Website and desktop app', (New-Object Drawing.Font 'Segoe UI Semibold', 26, ([Drawing.FontStyle]::Regular), $px), $ink, 452, 494)
+    $g.DrawString('xxseryixx.github.io/aomr-tracker', (New-Object Drawing.Font 'Segoe UI', 24, ([Drawing.FontStyle]::Regular), $px), $gold, 452, 540)
+    $g.Dispose()
+    return $bmp
+}
+
+$social = New-Social
+$social.Save((Join-Path $web 'social.png'), [Drawing.Imaging.ImageFormat]::Png)
+$social.Dispose()
+
+'icon.ico written to shell/, icon.png and social.png written to app/'

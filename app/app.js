@@ -69,6 +69,7 @@ let finding = false;
 // The website's relay (config.json, written when the site is published); without one, or once it fails, the player
 // opens and copies the profile pages.
 let relayUrl = '';
+let configured = Promise.resolve();
 // The website reads a copied profile page by itself once the player opened one, and each copy only once.
 let awaitingCopy = false;
 let lastCopied = '';
@@ -130,7 +131,7 @@ function ensureArt(kind) {
   const entry = art[kind];
   if (entry.state !== 'idle') return;
   entry.state = 'loading';
-  Promise.all([
+  const load = () => Promise.all([
     fetch(`art/${kind}.json`).then(r => (r.ok ? r.json() : null)),
     fetch(`art/${kind}.pack`).then(r => (r.ok ? r.blob() : null)),
   ]).then(([index, pack]) => {
@@ -143,6 +144,8 @@ function ensureArt(kind) {
     else renderAchievements();
     if (detail) refreshDetail();
   });
+  // Once the cards are on screen, so showing them never waits for their pictures.
+  requestAnimationFrame(() => setTimeout(load));
 }
 
 /**
@@ -155,12 +158,12 @@ function artSources(kind, name, steamIcon = '') {
   const at = name && entry.at?.[name];
   if (at) {
     const key = `${kind}/${name}`;
-    let url = artUrls.get(key);
-    if (!url) {
-      url = URL.createObjectURL(entry.pack.slice(at[0], at[0] + at[1], 'image/png'));
-      artUrls.set(key, url);
-    }
-    return [url];
+    // Cutting a picture out of the pack takes milliseconds, too long for every card at once: picture() asks only
+    // when its card is about to show.
+    return [artUrls.get(key) ?? (() => {
+      if (!artUrls.has(key)) artUrls.set(key, URL.createObjectURL(entry.pack.slice(at[0], at[0] + at[1], 'image/png')));
+      return artUrls.get(key);
+    })];
   }
   const drawn = name && NATIVE && live?.game.images ? `media/${kind === 'badges' ? 'badge' : 'achievement'}/${name}.png` : null;
   return [drawn, steamIcon].filter(Boolean);
@@ -283,9 +286,11 @@ function translatePage() {
 function render() {
   renderBar();
   renderButtons();
-  renderAchievements();
-  renderBadges();
+  renderTab();
 }
+
+/** Only the open tab has its cards drawn; the other one is drawn when it opens. */
+const renderTab = () => (tab === 'badges' ? renderBadges() : renderAchievements());
 
 /** Whether anything says what the player has: a file, the pasted profile or the desktop's refresh. */
 const haveData = () => !!(data.files.cache || data.files.stats || data.files.steamUser || data.profile.id != null || live?.online?.earned);
@@ -340,10 +345,21 @@ function progressBar(value, goal, label) {
   fill.style.setProperty('--p', `${percent}%`);
   return h('div', { class: 'bar' },
     h('div', { class: 'bar-label' }, h('span', { text: label ?? `${formatNumber(value)} / ${formatNumber(goal)}` }), h('span', { text: `${Math.floor(percent)}%` })),
-    h('div', { class: 'bar-line', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(goal), 'aria-valuenow': String(value) }, fill));
+    // The label above says it in words.
+    h('div', { class: 'bar-line', 'aria-hidden': 'true' }, fill));
 }
 
 const stateLine = (done, text) => h('span', { class: done ? 'state ok' : 'state locked' }, icon(done ? CHECK : LOCK), h('span', { text }));
+
+// Pictures that get their address only when they are about to show (artSources).
+const comingUp = new WeakMap();
+const nearView = new IntersectionObserver(entries => {
+  for (const { target, isIntersecting } of entries) {
+    if (!isIntersecting) continue;
+    nearView.unobserve(target);
+    target.src = comingUp.get(target)();
+  }
+}, { rootMargin: '300px 0px' });
 
 /** A picture that tries its sources in turn and ends on a star; an empty frame while the art is on its way (null). */
 function picture(sources) {
@@ -354,7 +370,12 @@ function picture(sources) {
     box.append(symbol());
     return box;
   }
-  const img = h('img', { src: queue.shift(), alt: '', loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer' });
+  const first = queue.shift();
+  const img = h('img', { src: typeof first === 'string' ? first : null, alt: '', loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer' });
+  if (typeof first === 'function') {
+    comingUp.set(img, first);
+    nearView.observe(img);
+  }
   img.addEventListener('error', () => {
     if (queue.length) img.src = queue.shift();
     else img.replaceWith(symbol());
@@ -398,25 +419,15 @@ function card(kind, item) {
     : h('span', { class: 'tier', 'aria-label': t('badge.tier', item.tier + 1) }, [0, 1, 2, 3, 4].map(i => h('i', { class: i <= item.tier ? 'on' : null })));
   const text = isAch ? (item.placeholder ? t('ach.placeholder') : item.desc) : item.objective;
   const key = isAch ? item.api : item.id;
-  const open = () => openDetail(kind, key);
-  const el = h('article', {
-    class: `item ${isAch ? 'achievement' : 'badge'}${done ? ' done' : started ? ' progress' : ''}`,
-    role: 'button',
-    tabindex: '0',
-    'aria-label': t('detail.open', item.name),
-    onclick: open,
-    onkeydown: e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        open();
-      }
-    },
-  },
-  picture(pictureOf(isAch, item)),
-  h('div', { class: 'item-body' },
-    h('div', { class: 'item-head' }, h('h3', { class: 'item-name', text: item.name, title: item.name }), head),
-    h('p', { class: secret ? 'item-desc secret' : 'item-desc', text: text || '—' }),
-    h('div', { class: 'item-foot' }, bar ?? (status ? stateLine(done, status) : null))));
+  const el = h('article', { class: `item ${isAch ? 'achievement' : 'badge'}${done ? ' done' : started ? ' progress' : ''}` },
+    picture(pictureOf(isAch, item)),
+    h('div', { class: 'item-body' },
+      h('div', { class: 'item-head' },
+        // The name is the card's button, and its clickable area covers the whole card (app.css).
+        h('h3', { class: 'item-name' }, h('button', { type: 'button', class: 'item-open', text: item.name, title: item.name, onclick: () => openDetail(kind, key) })),
+        head),
+      h('p', { class: secret ? 'item-desc secret' : 'item-desc', text: text || '—' }),
+      h('div', { class: 'item-foot' }, bar ?? (status ? stateLine(done, status) : null))));
   // Manual mode: every card is marked by hand with one click. Loading the progress switches it off.
   const label = item.manual ? t('detail.unmark') : t(isAch ? 'detail.markAch' : 'detail.markBadge');
   const mark = manualMode() && (!done || item.manual)
@@ -544,7 +555,7 @@ function toggleMark(group, markKey, kind, key) {
   renderBar();
   const item = kind === 'ach' ? achievements.find(a => a.api === key) : badges.find(b => b.id === key);
   for (const cell of item ? document.querySelectorAll(`.cell[data-key="${CSS.escape(`${kind}:${key}`)}"]`) : []) {
-    const focused = cell.contains(document.activeElement) && (document.activeElement.classList.contains('mark') ? '.mark' : '.item');
+    const focused = cell.contains(document.activeElement) && (document.activeElement.classList.contains('mark') ? '.mark' : '.item-open');
     const fresh = card(kind, item);
     cell.replaceWith(fresh);
     if (focused) fresh.querySelector(focused)?.focus({ preventScroll: true });
@@ -701,6 +712,7 @@ async function findProfile() {
     if (NATIVE) {
       setProfile(await shell('profile', { name }));
     } else {
+      await configured;
       const result = await readThroughRelay(name);
       if (!result.ok) {
         toast(t(result.message, ...(result.values ?? [])), true);
@@ -799,7 +811,7 @@ function wire() {
   window.addEventListener('hashchange', () => {
     tab = tabFromHash();
     renderBar();
-    ensureArt(tab);
+    renderTab();
     window.scrollTo({ top: 0 });
   });
   for (const button of document.querySelectorAll('[data-lang]')) {
@@ -893,9 +905,9 @@ function wire() {
   });
   $('find-profile').addEventListener('click', findProfile);
   // The pasted page is read as it arrives and never stays in the box.
-  $('paste').addEventListener('paste', e => {
-    e.preventDefault();
-    paste(e.clipboardData?.getData('text') ?? '');
+  $('paste').addEventListener('paste', e => paste(e.clipboardData?.getData('text') ?? ''));
+  $('paste').addEventListener('input', e => {
+    if (e.inputType === 'insertFromPaste') e.target.value = '';
   });
   // Read takes what is in the box, or with the box empty what was copied, once the browser lets it.
   $('read-paste').addEventListener('click', async () => {
@@ -987,8 +999,9 @@ async function start() {
   tab = tabFromHash();
   translatePage();
   wire();
-  await Promise.all([loadBundle(), NATIVE ? null : loadConfig()]);
-  document.documentElement.classList.toggle('profile-by-hand', !NATIVE && !relayUrl);
+  // The relay is only needed to look a profile up, so the page shows without waiting for it.
+  if (!NATIVE) configured = loadConfig().then(() => document.documentElement.classList.toggle('profile-by-hand', !relayUrl));
+  await loadBundle();
   if (NATIVE) {
     await loadDesktop().catch(e => toast(errorText(e), true));
   } else {

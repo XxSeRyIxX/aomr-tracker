@@ -28,6 +28,8 @@ test('the shipped data reads', () => {
   assert.match(server.fetched, /^\d{4}-\d\d-\d\d/);
   assert.ok(schema.length >= 132, `Steam's achievement list has ${schema.length} achievements.`);
   assert.ok(schema.every(a => a.name.english && a.name.spanish && a.desc.english), 'Every achievement has English and Spanish texts.');
+  const languages = new Set(schema.flatMap(a => [...Object.keys(a.name), ...Object.keys(a.desc)]));
+  assert.deepEqual([...languages].sort(), ['english', 'latam', 'spanish'], 'Only the languages the page shows: tools/export drops the rest.');
   assert.ok(server.items.filter(i => i.categories.includes(1003)).length >= 42);
   assert.ok(Object.keys(server.achievementIds).length >= 132);
 });

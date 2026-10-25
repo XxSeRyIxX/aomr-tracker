@@ -6,20 +6,61 @@
   <!-- Only the app's own files, plus achievement icons from Steam's image server and the relay that reads public profiles. Everything else goes through the shell. -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: https://cdn.fastly.steamstatic.com; connect-src 'self' https://*.workers.dev; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Every achievement and badge of Age of Mythology: Retold, and how far along you are on the ones you don't have yet.">
+  <title>AoM Retold Tracker · Age of Mythology: Retold achievements and badges</title>
+  <meta name="description" content="Every Age of Mythology: Retold achievement and badge, with your progress: counters, rarity and the gods you still need. For Steam, Xbox and PlayStation. Free.">
   <meta name="author" content="XxSeRyIxX">
   <meta name="theme-color" content="#0c1120">
-  <title>AoM Retold Tracker</title>
+  <link rel="canonical" href="https://xxseryixx.github.io/aomr-tracker/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AoM Retold Tracker">
+  <meta property="og:title" content="AoM Retold Tracker">
+  <meta property="og:description" content="Every Age of Mythology: Retold achievement and badge, with your progress: counters, rarity and the gods you still need. Website and desktop app, in English and Spanish.">
+  <meta property="og:url" content="https://xxseryixx.github.io/aomr-tracker/">
+  <meta property="og:image" content="https://xxseryixx.github.io/aomr-tracker/social.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="AoM Retold Tracker: every achievement and badge of Age of Mythology: Retold, and your progress.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AoM Retold Tracker",
+    "url": "https://xxseryixx.github.io/aomr-tracker/",
+    "description": "Every achievement and badge of Age of Mythology: Retold, with your progress: counters, rarity and the gods you still need. Reads the game's files, Steam or your public profile (Xbox, PlayStation, PC).",
+    "image": "https://xxseryixx.github.io/aomr-tracker/social.png",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web, Windows, macOS, Linux",
+    "inLanguage": ["en", "es"],
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+    "author": { "@type": "Person", "name": "XxSeRyIxX", "url": "https://github.com/XxSeRyIxX" },
+    "about": { "@type": "VideoGame", "name": "Age of Mythology: Retold" }
+  }
+  </script>
   <link rel="icon" href="icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="app.css">
   <script type="module" src="app.js"></script>
+  <!-- Everything app.js needs before it shows anything, fetched at once instead of one after another. -->
+  <link rel="modulepreload" href="core.js">
+  <link rel="modulepreload" href="files.js">
+  <link rel="modulepreload" href="i18n.js">
+  <link rel="modulepreload" href="native.js">
+  <link rel="modulepreload" href="sources.js">
+  <link rel="preload" href="data/game.json" as="fetch" crossorigin>
+  <link rel="preload" href="data/server.json" as="fetch" crossorigin>
+  <link rel="preload" href="data/steam-schema.vdf" as="fetch" crossorigin>
 </head>
 <body class="booting">
   <div id="loading" class="loading" role="status">
     <img src="icon.png" width="64" height="64" alt="">
     <span class="spinner" aria-hidden="true"></span>
     <p data-i18n="loading.text"></p>
+    <noscript><p>AoM Retold Tracker needs JavaScript to show the achievements and badges of Age of Mythology: Retold.</p></noscript>
   </div>
 
   <header class="topbar">
@@ -130,7 +171,18 @@
     </section>
   </main>
 
-  <footer class="footer muted small" data-i18n="footer.sources">Achievements and badges: the game's files, Steam or your public profile · Texts and art: the game</footer>
+  <footer class="footer">
+    <p class="footer-brand"><img src="icon.png" width="22" height="22" alt=""><span data-i18n="app.title">AoM Retold Tracker</span></p>
+    <nav class="footer-links">
+      <a href="https://github.com/XxSeRyIxX/aomr-tracker" target="_blank" rel="noopener" data-i18n="about.source">Source code</a>
+      <a href="https://github.com/XxSeRyIxX/aomr-tracker/releases/latest" target="_blank" rel="noopener" data-only="web" data-i18n="about.getApp">Desktop app</a>
+      <a href="https://github.com/XxSeRyIxX/aomr-tracker/issues" target="_blank" rel="noopener" data-i18n="footer.issue">Report a problem</a>
+      <button class="link" type="button" data-about data-i18n="action.about">About</button>
+    </nav>
+    <p data-i18n="footer.sources">Achievements and badges: the game's files, Steam or your public profile · Texts and art: the game</p>
+    <p data-i18n="about.disclaimer">AoM Retold Tracker was created under Microsoft's "Game Content Usage Rules" using assets from Age of Mythology: Retold, and it is not endorsed by or affiliated with Microsoft. It is not affiliated with World's Edge or Valve either.</p>
+    <p>© 2026 <a href="https://github.com/XxSeRyIxX" target="_blank" rel="noopener">XxSeRyIxX</a> · <span data-i18n="about.license">Free software under the GNU AGPL v3 or later.</span></p>
+  </footer>
 
   <dialog id="detail" aria-labelledby="detail-name">
     <form method="dialog">

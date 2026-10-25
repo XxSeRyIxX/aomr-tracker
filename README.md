@@ -2,6 +2,8 @@
 
 Every achievement and every badge of **Age of Mythology: Retold** in one place, with how far along you are on the ones you don't have yet: which gods still count for *Connoisseur of the Gods*, which legends for *A Legendary Rush*, how many labyrinth runs you have for *Demigod*, which Greek gods you already beat a labyrinth boss with...
 
+**[Open the website](https://xxseryixx.github.io/aomr-tracker/)** or **[download the desktop app](https://github.com/XxSeRyIxX/aomr-tracker/releases/latest)**. Free, in English and Spanish.
+
 It is one web app in two editions that show the same things:
 
 | | Website (GitHub Pages) | Desktop app (Windows, macOS, Linux) |
@@ -87,7 +89,7 @@ What exists comes from data, not from code, so new achievements and badges show 
 
 - The **desktop app** reads Steam's achievement list, the game's texts and its art from your installation, every time.
 - Both editions also read the lists of badges, challenges and achievements from your game's folder, so they know whatever your installed version knows, before the site is updated.
-- The **website** ships its own copy too: the game's texts, Steam's achievement list and the game's pictures of the badges and achievements (`tools/export`, which needs the game installed), and the servers' public lists (`tools/server-data.mjs`). After a game update, run them and commit what they write:
+- The **website** ships its own copy too: the game's texts, Steam's achievement list (its English and Spanish texts only) and the game's pictures of the badges and achievements (`tools/export`, which needs the game installed), and the servers' public lists (`tools/server-data.mjs`). After a game update, run them and commit what they write:
 
   ```powershell
   dotnet run --project tools/export -c Release
@@ -96,7 +98,7 @@ What exists comes from data, not from code, so new achievements and badges show 
 
   `tests/bundle.test.mjs` then checks that every badge has its art, its name and its goal in both languages, that every achievement has its picture, and that no achievement the servers list is missing from the shipped list. With a free [Steam Web API key](https://steamcommunity.com/dev/apikey) in `STEAM_API_KEY`, `server-data.mjs` also writes the texts and icons of every achievement.
 
-The art ships as two files, `app/art/achievements.pack` and `app/art/badges.pack`, with every image one after another, and an index for each (`.json`). The page downloads each once, the first time it shows those cards, and cuts each image out of it in memory. The game's pictures of locked achievements are the same ones in grey, which the page does itself. Steam's icons are only a fallback for achievements newer than the shipped art.
+The art ships as two files, `app/art/achievements.pack` and `app/art/badges.pack`, with every image one after another, and an index for each (`.json`). The page downloads each once, after it first shows those cards, and cuts each image out of it in memory as its card comes into view. The game's pictures of locked achievements are the same ones in grey, which the page does itself. Steam's icons are only a fallback for achievements newer than the shipped art.
 
 The only lists in the code are the ones the game stores as bare numbers (gods and legends by their position in a statistic). A new god or legend still counts, and shows as `#24` until it is added to `GODS` or `LEGENDS` in `app/core.js`.
 
@@ -111,7 +113,7 @@ dotnet run --project tests/shell -c Release      # the desktop side: folders on 
 dotnet publish shell -c Release -r win-x64 -o publish   # one self-contained app; osx-arm64, osx-x64, linux-x64 too
 ```
 
-`app/` is the website as it is: serve the folder with any static server to try it. `tools/make-icon.ps1` draws the icon into `app/icon.png` and `shell/icon.ico`.
+`app/` is the website as it is: serve the folder with any static server to try it. `tools/make-icon.ps1` draws the icon into `app/icon.png` and `shell/icon.ico`, and the link preview `app/social.png` (also the repository's social preview).
 
 ## Deploy
 
