@@ -36,7 +36,8 @@ jobs:
       - name: Site settings
         env:
           RELAY_URL: ${{ vars.RELAY_URL }}
-        run: node -e "require('fs').writeFileSync('app/config.json', JSON.stringify({ relay: process.env.RELAY_URL || '' }) + '\n')"
+        run: |
+          node -e "require('fs').writeFileSync('app/config.json', JSON.stringify({ relay: process.env.RELAY_URL || '' }) + '\n')"
 
       # app/ is the site: no build step, no asset copying.
       - uses: actions/configure-pages@v6
